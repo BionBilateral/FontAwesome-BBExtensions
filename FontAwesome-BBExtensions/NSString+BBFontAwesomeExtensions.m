@@ -29,7 +29,10 @@ static NSDictionary *kFontAwesomeIconsToStrings;
                                            @(BBFontAwesomeIconAddressBook): BBFontAwesomeIdentifier.iconAddressBook,
                                            @(BBFontAwesomeIconAddressBookO): BBFontAwesomeIdentifier.iconAddressBookO,
                                            @(BBFontAwesomeIconAddressCard): BBFontAwesomeIdentifier.iconAddressCard,
-                                           @(BBFontAwesomeIconAddressCardO): BBFontAwesomeIdentifier.iconAddressCardO};
+                                           @(BBFontAwesomeIconAddressCardO): BBFontAwesomeIdentifier.iconAddressCardO,
+                                           @(BBFontAwesomeIconBarChart): BBFontAwesomeIdentifier.iconBarChart,
+                                           @(BBFontAwesomeIconPlus): BBFontAwesomeIdentifier.iconPlus,
+                                           @(BBFontAwesomeIconUser): BBFontAwesomeIdentifier.iconUser};
         
         NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
         
@@ -43,7 +46,10 @@ static NSDictionary *kFontAwesomeIconsToStrings;
                                        @(BBFontAwesomeIconAddressBook): BBFontAwesomeString.iconAddressBook,
                                        @(BBFontAwesomeIconAddressBookO): BBFontAwesomeString.iconAddressBookO,
                                        @(BBFontAwesomeIconAddressCard): BBFontAwesomeString.iconAddressCard,
-                                       @(BBFontAwesomeIconAddressCardO): BBFontAwesomeString.iconAddressCardO};
+                                       @(BBFontAwesomeIconAddressCardO): BBFontAwesomeString.iconAddressCardO,
+                                       @(BBFontAwesomeIconBarChart): BBFontAwesomeString.iconBarChart,
+                                       @(BBFontAwesomeIconPlus): BBFontAwesomeString.iconPlus,
+                                       @(BBFontAwesomeIconUser): BBFontAwesomeString.iconUser};
     });
 }
 
