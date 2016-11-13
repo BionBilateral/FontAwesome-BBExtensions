@@ -17,39 +17,38 @@
 
 static NSDictionary *kFontAwesomeIconsToIdentifiers;
 static NSDictionary *kFontAwesomeIdentifiersToIcons;
-
 static NSDictionary *kFontAwesomeIconsToStrings;
+static NSDictionary *kFontAwesomeIdentifiersToStrings;
+
+@interface NSString (BBFontAwesomeExtensionsPrivate)
++ (NSString *)_BB_fontAwesomeIdentifierForIcon:(BBFontAwesomeIcon)icon;
++ (NSString *)_BB_fontAwesomeStringForIcon:(BBFontAwesomeIcon)icon;
+@end
 
 @implementation NSString (BBFontAwesomeExtensions)
 
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        kFontAwesomeIconsToIdentifiers = @{@(BBFontAwesomeIcon500PX): BBFontAwesomeIdentifier.icon500PX,
-                                           @(BBFontAwesomeIconAddressBook): BBFontAwesomeIdentifier.iconAddressBook,
-                                           @(BBFontAwesomeIconAddressBookO): BBFontAwesomeIdentifier.iconAddressBookO,
-                                           @(BBFontAwesomeIconAddressCard): BBFontAwesomeIdentifier.iconAddressCard,
-                                           @(BBFontAwesomeIconAddressCardO): BBFontAwesomeIdentifier.iconAddressCardO,
-                                           @(BBFontAwesomeIconBarChart): BBFontAwesomeIdentifier.iconBarChart,
-                                           @(BBFontAwesomeIconPlus): BBFontAwesomeIdentifier.iconPlus,
-                                           @(BBFontAwesomeIconUser): BBFontAwesomeIdentifier.iconUser};
+        NSMutableDictionary *iconsToIdentifiers = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *identifiersToIcons = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *iconsToStrings = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *identifiersToStrings = [[NSMutableDictionary alloc] init];
         
-        NSMutableDictionary *temp = [[NSMutableDictionary alloc] init];
+        for (NSInteger i=0; i<BB_FONT_AWESOME_ICON_TOTAL_ICONS; i++) {
+            NSString *identifier = [self _BB_fontAwesomeIdentifierForIcon:i];
+            NSString *string = [self _BB_fontAwesomeStringForIcon:i];
+            
+            [iconsToIdentifiers setObject:identifier forKey:@(i)];
+            [identifiersToIcons setObject:@(i) forKey:identifier];
+            [iconsToStrings setObject:string forKey:@(i)];
+            [identifiersToStrings setObject:string forKey:identifier];
+        }
         
-        [kFontAwesomeIconsToIdentifiers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-            [temp setObject:key forKey:obj];
-        }];
-        
-        kFontAwesomeIdentifiersToIcons = [temp copy];
-        
-        kFontAwesomeIconsToStrings = @{@(BBFontAwesomeIcon500PX): BBFontAwesomeString.icon500PX,
-                                       @(BBFontAwesomeIconAddressBook): BBFontAwesomeString.iconAddressBook,
-                                       @(BBFontAwesomeIconAddressBookO): BBFontAwesomeString.iconAddressBookO,
-                                       @(BBFontAwesomeIconAddressCard): BBFontAwesomeString.iconAddressCard,
-                                       @(BBFontAwesomeIconAddressCardO): BBFontAwesomeString.iconAddressCardO,
-                                       @(BBFontAwesomeIconBarChart): BBFontAwesomeString.iconBarChart,
-                                       @(BBFontAwesomeIconPlus): BBFontAwesomeString.iconPlus,
-                                       @(BBFontAwesomeIconUser): BBFontAwesomeString.iconUser};
+        kFontAwesomeIconsToIdentifiers = [iconsToIdentifiers copy];
+        kFontAwesomeIdentifiersToIcons = [identifiersToIcons copy];
+        kFontAwesomeIconsToStrings = [iconsToStrings copy];
+        kFontAwesomeIdentifiersToStrings = [identifiersToStrings copy];
     });
 }
 
@@ -64,7 +63,140 @@ static NSDictionary *kFontAwesomeIconsToStrings;
     return kFontAwesomeIconsToStrings[@(icon)];
 }
 + (NSString *)BB_fontAwesomeStringForIdentifier:(NSString *)identifier; {
-    return kFontAwesomeIconsToStrings[@([self BB_fontAwesomeIconForIdentifier:identifier])];
+    return kFontAwesomeIdentifiersToStrings[identifier];
+}
+
+@end
+
+@implementation NSString (BBFontAwesomeExtensionsPrivate)
+
++ (NSString *)_BB_fontAwesomeIdentifierForIcon:(BBFontAwesomeIcon)icon; {
+    switch (icon) {
+        case BBFontAwesomeIcon500PX:
+            return BBFontAwesomeIdentifier.icon500PX;
+        case BBFontAwesomeIconAddressBook:
+            return BBFontAwesomeIdentifier.iconAddressBook;
+        case BBFontAwesomeIconAddressBookO:
+            return BBFontAwesomeIdentifier.iconAddressBookO;
+        case BBFontAwesomeIconAddressCard:
+            return BBFontAwesomeIdentifier.iconAddressCard;
+        case BBFontAwesomeIconAddressCardO:
+            return BBFontAwesomeIdentifier.iconAddressCardO;
+        case BBFontAwesomeIconAdjust:
+            return BBFontAwesomeIdentifier.iconAdjust;
+        case BBFontAwesomeIconADN:
+            return BBFontAwesomeIdentifier.iconADN;
+        case BBFontAwesomeIconAlignCenter:
+            return BBFontAwesomeIdentifier.iconAlignCenter;
+        case BBFontAwesomeIconAlignJustify:
+            return BBFontAwesomeIdentifier.iconAlignJustify;
+        case BBFontAwesomeIconAlignLeft:
+            return BBFontAwesomeIdentifier.iconAlignLeft;
+        case BBFontAwesomeIconAlignRight:
+            return BBFontAwesomeIdentifier.iconAlignRight;
+        case BBFontAwesomeIconAmazon:
+            return BBFontAwesomeIdentifier.iconAmazon;
+        case BBFontAwesomeIconAmbulance:
+            return BBFontAwesomeIdentifier.iconAmbulance;
+        case BBFontAwesomeIconAmericanSignLanguageInterpreting:
+            return BBFontAwesomeIdentifier.iconAmericanSignLanguageInterpreting;
+        case BBFontAwesomeIconAnchor:
+            return BBFontAwesomeIdentifier.iconAnchor;
+        case BBFontAwesomeIconAndroid:
+            return BBFontAwesomeIdentifier.iconAndroid;
+        case BBFontAwesomeIconAngelList:
+            return BBFontAwesomeIdentifier.iconAngelList;
+        case BBFontAwesomeIconAngleDoubleDown:
+            return BBFontAwesomeIdentifier.iconAngleDoubleDown;
+        case BBFontAwesomeIconAngleDoubleLeft:
+            return BBFontAwesomeIdentifier.iconAngleDoubleLeft;
+        case BBFontAwesomeIconAngleDoubleRight:
+            return BBFontAwesomeIdentifier.iconAngleDoubleRight;
+        case BBFontAwesomeIconAngleDoubleUp:
+            return BBFontAwesomeIdentifier.iconAngleDoubleUp;
+        case BBFontAwesomeIconAngleDown:
+            return BBFontAwesomeIdentifier.iconAngleDown;
+        case BBFontAwesomeIconAngleLeft:
+            return BBFontAwesomeIdentifier.iconAngleLeft;
+        case BBFontAwesomeIconAngleRight:
+            return BBFontAwesomeIdentifier.iconAngleRight;
+        case BBFontAwesomeIconAngleUp:
+            return BBFontAwesomeIdentifier.iconAngleUp;
+        case BBFontAwesomeIconApple:
+            return BBFontAwesomeIdentifier.iconApple;
+        case BBFontAwesomeIconBarChart:
+            return BBFontAwesomeIdentifier.iconBarChart;
+        case BBFontAwesomeIconPlus:
+            return BBFontAwesomeIdentifier.iconPlus;
+        case BBFontAwesomeIconUser:
+            return BBFontAwesomeIdentifier.iconUser;
+        default:
+            return nil;
+    }
+}
++ (NSString *)_BB_fontAwesomeStringForIcon:(BBFontAwesomeIcon)icon; {
+    switch (icon) {
+        case BBFontAwesomeIcon500PX:
+            return BBFontAwesomeString.icon500PX;
+        case BBFontAwesomeIconAddressBook:
+            return BBFontAwesomeString.iconAddressBook;
+        case BBFontAwesomeIconAddressBookO:
+            return BBFontAwesomeString.iconAddressBookO;
+        case BBFontAwesomeIconAddressCard:
+            return BBFontAwesomeString.iconAddressCard;
+        case BBFontAwesomeIconAddressCardO:
+            return BBFontAwesomeString.iconAddressCardO;
+        case BBFontAwesomeIconAdjust:
+            return BBFontAwesomeString.iconAdjust;
+        case BBFontAwesomeIconADN:
+            return BBFontAwesomeString.iconADN;
+        case BBFontAwesomeIconAlignCenter:
+            return BBFontAwesomeString.iconAlignCenter;
+        case BBFontAwesomeIconAlignJustify:
+            return BBFontAwesomeString.iconAlignJustify;
+        case BBFontAwesomeIconAlignLeft:
+            return BBFontAwesomeString.iconAlignLeft;
+        case BBFontAwesomeIconAlignRight:
+            return BBFontAwesomeString.iconAlignRight;
+        case BBFontAwesomeIconAmazon:
+            return BBFontAwesomeString.iconAmazon;
+        case BBFontAwesomeIconAmbulance:
+            return BBFontAwesomeString.iconAmbulance;
+        case BBFontAwesomeIconAmericanSignLanguageInterpreting:
+            return BBFontAwesomeString.iconAmericanSignLanguageInterpreting;
+        case BBFontAwesomeIconAnchor:
+            return BBFontAwesomeString.iconAnchor;
+        case BBFontAwesomeIconAndroid:
+            return BBFontAwesomeString.iconAndroid;
+        case BBFontAwesomeIconAngelList:
+            return BBFontAwesomeString.iconAngelList;
+        case BBFontAwesomeIconAngleDoubleDown:
+            return BBFontAwesomeString.iconAngleDoubleDown;
+        case BBFontAwesomeIconAngleDoubleLeft:
+            return BBFontAwesomeString.iconAngleDoubleLeft;
+        case BBFontAwesomeIconAngleDoubleRight:
+            return BBFontAwesomeString.iconAngleDoubleRight;
+        case BBFontAwesomeIconAngleDoubleUp:
+            return BBFontAwesomeString.iconAngleDoubleUp;
+        case BBFontAwesomeIconAngleDown:
+            return BBFontAwesomeString.iconAngleDown;
+        case BBFontAwesomeIconAngleLeft:
+            return BBFontAwesomeString.iconAngleLeft;
+        case BBFontAwesomeIconAngleRight:
+            return BBFontAwesomeString.iconAngleRight;
+        case BBFontAwesomeIconAngleUp:
+            return BBFontAwesomeString.iconAngleUp;
+        case BBFontAwesomeIconApple:
+            return BBFontAwesomeString.iconApple;
+        case BBFontAwesomeIconBarChart:
+            return BBFontAwesomeString.iconBarChart;
+        case BBFontAwesomeIconPlus:
+            return BBFontAwesomeString.iconPlus;
+        case BBFontAwesomeIconUser:
+            return BBFontAwesomeString.iconUser;
+        default:
+            return nil;
+    }
 }
 
 @end

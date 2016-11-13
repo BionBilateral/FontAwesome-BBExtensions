@@ -19,15 +19,38 @@
 #import <Foundation/NSString.h>
 
 typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
-    BBFontAwesomeIcon500PX,
+    BBFontAwesomeIcon500PX = 0,
     BBFontAwesomeIconAddressBook,
     BBFontAwesomeIconAddressBookO,
     BBFontAwesomeIconAddressCard,
     BBFontAwesomeIconAddressCardO,
+    BBFontAwesomeIconAdjust,
+    BBFontAwesomeIconADN,
+    BBFontAwesomeIconAlignCenter,
+    BBFontAwesomeIconAlignJustify,
+    BBFontAwesomeIconAlignLeft,
+    BBFontAwesomeIconAlignRight,
+    BBFontAwesomeIconAmazon,
+    BBFontAwesomeIconAmbulance,
+    BBFontAwesomeIconAmericanSignLanguageInterpreting,
+    BBFontAwesomeIconAnchor,
+    BBFontAwesomeIconAndroid,
+    BBFontAwesomeIconAngelList,
+    BBFontAwesomeIconAngleDoubleDown,
+    BBFontAwesomeIconAngleDoubleLeft,
+    BBFontAwesomeIconAngleDoubleRight,
+    BBFontAwesomeIconAngleDoubleUp,
+    BBFontAwesomeIconAngleDown,
+    BBFontAwesomeIconAngleLeft,
+    BBFontAwesomeIconAngleRight,
+    BBFontAwesomeIconAngleUp,
+    BBFontAwesomeIconApple,
     
     BBFontAwesomeIconBarChart,
     BBFontAwesomeIconPlus,
-    BBFontAwesomeIconUser
+    BBFontAwesomeIconUser,
+    
+    BB_FONT_AWESOME_ICON_TOTAL_ICONS
 };
 
 extern const struct BBFontAwesomeIdentifier {
@@ -36,6 +59,27 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconAddressBookO;
     __unsafe_unretained NSString *iconAddressCard;
     __unsafe_unretained NSString *iconAddressCardO;
+    __unsafe_unretained NSString *iconAdjust;
+    __unsafe_unretained NSString *iconADN;
+    __unsafe_unretained NSString *iconAlignCenter;
+    __unsafe_unretained NSString *iconAlignJustify;
+    __unsafe_unretained NSString *iconAlignLeft;
+    __unsafe_unretained NSString *iconAlignRight;
+    __unsafe_unretained NSString *iconAmazon;
+    __unsafe_unretained NSString *iconAmbulance;
+    __unsafe_unretained NSString *iconAmericanSignLanguageInterpreting;
+    __unsafe_unretained NSString *iconAnchor;
+    __unsafe_unretained NSString *iconAndroid;
+    __unsafe_unretained NSString *iconAngelList;
+    __unsafe_unretained NSString *iconAngleDoubleDown;
+    __unsafe_unretained NSString *iconAngleDoubleLeft;
+    __unsafe_unretained NSString *iconAngleDoubleRight;
+    __unsafe_unretained NSString *iconAngleDoubleUp;
+    __unsafe_unretained NSString *iconAngleDown;
+    __unsafe_unretained NSString *iconAngleLeft;
+    __unsafe_unretained NSString *iconAngleRight;
+    __unsafe_unretained NSString *iconAngleUp;
+    __unsafe_unretained NSString *iconApple;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
@@ -48,6 +92,27 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconAddressBookO;
     __unsafe_unretained NSString *iconAddressCard;
     __unsafe_unretained NSString *iconAddressCardO;
+    __unsafe_unretained NSString *iconAdjust;
+    __unsafe_unretained NSString *iconADN;
+    __unsafe_unretained NSString *iconAlignCenter;
+    __unsafe_unretained NSString *iconAlignJustify;
+    __unsafe_unretained NSString *iconAlignLeft;
+    __unsafe_unretained NSString *iconAlignRight;
+    __unsafe_unretained NSString *iconAmazon;
+    __unsafe_unretained NSString *iconAmbulance;
+    __unsafe_unretained NSString *iconAmericanSignLanguageInterpreting;
+    __unsafe_unretained NSString *iconAnchor;
+    __unsafe_unretained NSString *iconAndroid;
+    __unsafe_unretained NSString *iconAngelList;
+    __unsafe_unretained NSString *iconAngleDoubleDown;
+    __unsafe_unretained NSString *iconAngleDoubleLeft;
+    __unsafe_unretained NSString *iconAngleDoubleRight;
+    __unsafe_unretained NSString *iconAngleDoubleUp;
+    __unsafe_unretained NSString *iconAngleDown;
+    __unsafe_unretained NSString *iconAngleLeft;
+    __unsafe_unretained NSString *iconAngleRight;
+    __unsafe_unretained NSString *iconAngleUp;
+    __unsafe_unretained NSString *iconApple;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
