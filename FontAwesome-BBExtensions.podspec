@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = {:type => "BSD", :file => "license.txt"}
   s.author             = { "William Towe" => "willbur1984@gmail.com" }
   s.platform     = :ios, "10.0"
-  s.source       = {:git => "https://github.com/BionBilateral/FontAwesome-BBExtensions.git", :tag => spec.version.to_s}
+  s.source       = {:git => "https://github.com/BionBilateral/FontAwesome-BBExtensions.git", :tag => s.version.to_s}
   s.source_files  = "FontAwesome-BBExtensions/*.{h,m}"
   s.frameworks = "Foundation", "UIKit"
   s.requires_arc = true
