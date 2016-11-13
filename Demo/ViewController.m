@@ -16,8 +16,38 @@
 #import "ViewController.h"
 #import <FontAwesome_BBExtensions/FontAwesome_BBExtensions.h>
 
-@interface ViewController ()
+@interface CollectionViewCell : UICollectionViewCell
+@property (assign,nonatomic) BBFontAwesomeIcon icon;
 @property (strong,nonatomic) UIImageView *imageView;
+@end
+
+@implementation CollectionViewCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (!(self = [super initWithFrame:frame]))
+        return nil;
+    
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    [self.contentView addSubview:_imageView];
+    
+    return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self.imageView setFrame:self.contentView.bounds];
+    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:self.icon foregroundColor:self.tintColor size:self.imageView.frame.size]];
+}
+
+- (void)setIcon:(BBFontAwesomeIcon)icon {
+    _icon = icon;
+}
+
+@end
+
+@interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
+@property (strong,nonatomic) UICollectionView *collectionView;
 @end
 
 @implementation ViewController
@@ -25,15 +55,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setImageView:[[UIImageView alloc] initWithFrame:CGRectZero]];
-    [self.imageView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.imageView setContentMode:UIViewContentModeCenter];
-    [self.view addSubview:self.imageView];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:@{@"view": self.imageView}]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:@{@"view": self.imageView}]];
+    [layout setSectionInset:UIEdgeInsetsMake(8, 8, 0, 8)];
+    [layout setMinimumLineSpacing:8.0];
+    [layout setMinimumInteritemSpacing:8.0];
+    [layout setItemSize:CGSizeMake(64, 64)];
     
-    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:BBFontAwesomeIconAddressBook foregroundColor:nil backgroundColor:[UIColor lightGrayColor] size:CGSizeMake(128, 128)]];
+    [self setCollectionView:[[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout]];
+    [self.collectionView setBackgroundColor:[UIColor whiteColor]];
+    [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([CollectionViewCell class])];
+    [self.collectionView setDataSource:self];
+    [self.collectionView setDelegate:self];
+    [self.view addSubview:self.collectionView];
+}
+- (void)viewWillLayoutSubviews {
+    [self.collectionView setFrame:CGRectMake(0, [self.topLayoutGuide length], CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - [self.topLayoutGuide length])];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return BB_FONT_AWESOME_ICON_TOTAL_ICONS;
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CollectionViewCell class]) forIndexPath:indexPath];
+    
+    [cell setIcon:(BBFontAwesomeIcon)indexPath.row];
+    
+    return cell;
 }
 
 @end
