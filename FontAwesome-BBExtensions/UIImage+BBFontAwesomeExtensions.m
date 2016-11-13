@@ -29,7 +29,7 @@
     return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:backgroundColor scale:0.0 size:size];
 }
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor scale:(CGFloat)scale size:(CGSize)size; {
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     
     if (backgroundColor != nil) {
         [backgroundColor setFill];
