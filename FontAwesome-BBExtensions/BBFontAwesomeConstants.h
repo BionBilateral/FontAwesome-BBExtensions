@@ -23,7 +23,11 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconAddressBook,
     BBFontAwesomeIconAddressBookO,
     BBFontAwesomeIconAddressCard,
-    BBFontAwesomeIconAddressCardO
+    BBFontAwesomeIconAddressCardO,
+    
+    BBFontAwesomeIconBarChart,
+    BBFontAwesomeIconPlus,
+    BBFontAwesomeIconUser
 };
 
 extern const struct BBFontAwesomeIdentifier {
@@ -32,14 +36,22 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconAddressBookO;
     __unsafe_unretained NSString *iconAddressCard;
     __unsafe_unretained NSString *iconAddressCardO;
+    
+    __unsafe_unretained NSString *iconBarChart;
+    __unsafe_unretained NSString *iconPlus;
+    __unsafe_unretained NSString *iconUser;
 } BBFontAwesomeIdentifier;
 
 extern const struct BBFontAwesomeString {
-    __unsafe_unretained NSString *text500PX;
-    __unsafe_unretained NSString *textAddressBook;
-    __unsafe_unretained NSString *textAddressBookO;
-    __unsafe_unretained NSString *textAddressCard;
-    __unsafe_unretained NSString *textAddressCardO;
+    __unsafe_unretained NSString *icon500PX;
+    __unsafe_unretained NSString *iconAddressBook;
+    __unsafe_unretained NSString *iconAddressBookO;
+    __unsafe_unretained NSString *iconAddressCard;
+    __unsafe_unretained NSString *iconAddressCardO;
+    
+    __unsafe_unretained NSString *iconBarChart;
+    __unsafe_unretained NSString *iconPlus;
+    __unsafe_unretained NSString *iconUser;
 } BBFontAwesomeString;
 
 #endif /* BBFontAwesomeConstants_h */

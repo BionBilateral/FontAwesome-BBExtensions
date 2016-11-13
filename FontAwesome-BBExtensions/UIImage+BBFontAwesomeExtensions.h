@@ -20,6 +20,7 @@
 
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon size:(CGSize)size;
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor size:(CGSize)size;
-+ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon backgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor scale:(CGFloat)scale size:(CGSize)size;
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor size:(CGSize)size;
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor scale:(CGFloat)scale size:(CGSize)size;
 
 @end

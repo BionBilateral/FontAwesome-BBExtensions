@@ -33,7 +33,7 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:@{@"view": self.imageView}]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:@{@"view": self.imageView}]];
     
-    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:BBFontAwesomeIconAddressBook size:CGSizeMake(128, 128)]];
+    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:BBFontAwesomeIconAddressBook foregroundColor:nil backgroundColor:[UIColor lightGrayColor] size:CGSizeMake(128, 128)]];
 }
 
 @end

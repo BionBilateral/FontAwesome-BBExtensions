@@ -20,12 +20,15 @@
 @implementation UIImage (BBFontAwesomeExtensions)
 
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon size:(CGSize)size; {
-    return [self BB_fontAwesomeImageWithIcon:icon backgroundColor:nil foregroundColor:nil scale:0.0 size:size];
+    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:nil backgroundColor:nil scale:0.0 size:size];
 }
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor size:(CGSize)size; {
-    return [self BB_fontAwesomeImageWithIcon:icon backgroundColor:nil foregroundColor:foregroundColor scale:0.0 size:size];
+    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:nil scale:0.0 size:size];
 }
-+ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon backgroundColor:(UIColor *)backgroundColor foregroundColor:(UIColor *)foregroundColor scale:(CGFloat)scale size:(CGSize)size; {
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor size:(CGSize)size; {
+    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:backgroundColor scale:0.0 size:size];
+}
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor scale:(CGFloat)scale size:(CGSize)size; {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
     
     if (backgroundColor != nil) {

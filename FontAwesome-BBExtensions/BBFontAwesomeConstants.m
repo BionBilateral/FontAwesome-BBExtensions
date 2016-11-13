@@ -20,13 +20,21 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconAddressBook = @"fa-address-book",
     .iconAddressBookO = @"fa-address-book-o",
     .iconAddressCard = @"fa-address-card",
-    .iconAddressCardO = @"fa-address-card-o"
+    .iconAddressCardO = @"fa-address-card-o",
+    
+    .iconBarChart = @"fa-bar-chart",
+    .iconPlus = @"fa-plus",
+    .iconUser = @"fa-user"
 };
 
 const struct BBFontAwesomeString BBFontAwesomeString = {
-    .text500PX = @"\uf26e",
-    .textAddressBook = @"\uf2b9",
-    .textAddressBookO = @"\uf2ba",
-    .textAddressCard = @"\uf2bb",
-    .textAddressCardO = @"\uf2bc"
+    .icon500PX = @"\uf26e",
+    .iconAddressBook = @"\uf2b9",
+    .iconAddressBookO = @"\uf2ba",
+    .iconAddressCard = @"\uf2bb",
+    .iconAddressCardO = @"\uf2bc",
+    
+    .iconBarChart = @"\uf080",
+    .iconPlus = @"\uf067",
+    .iconUser = @"\uf007"
 };

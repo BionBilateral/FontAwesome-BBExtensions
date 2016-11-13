@@ -39,11 +39,11 @@ static NSDictionary *kFontAwesomeIconsToStrings;
         
         kFontAwesomeIdentifiersToIcons = [temp copy];
         
-        kFontAwesomeIconsToStrings = @{@(BBFontAwesomeIcon500PX): BBFontAwesomeString.text500PX,
-                                       @(BBFontAwesomeIconAddressBook): BBFontAwesomeString.textAddressBook,
-                                       @(BBFontAwesomeIconAddressBookO): BBFontAwesomeString.textAddressBookO,
-                                       @(BBFontAwesomeIconAddressCard): BBFontAwesomeString.textAddressCard,
-                                       @(BBFontAwesomeIconAddressCardO): BBFontAwesomeString.textAddressCardO};
+        kFontAwesomeIconsToStrings = @{@(BBFontAwesomeIcon500PX): BBFontAwesomeString.icon500PX,
+                                       @(BBFontAwesomeIconAddressBook): BBFontAwesomeString.iconAddressBook,
+                                       @(BBFontAwesomeIconAddressBookO): BBFontAwesomeString.iconAddressBookO,
+                                       @(BBFontAwesomeIconAddressCard): BBFontAwesomeString.iconAddressCard,
+                                       @(BBFontAwesomeIconAddressCardO): BBFontAwesomeString.iconAddressCardO};
     });
 }
 
