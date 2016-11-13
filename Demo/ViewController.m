@@ -14,7 +14,10 @@
 //  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import "ViewController.h"
+
 #import <FontAwesome_BBExtensions/FontAwesome_BBExtensions.h>
+
+#import <QuickLook/QuickLook.h>
 
 @interface CollectionViewCell : UICollectionViewCell
 @property (assign,nonatomic) BBFontAwesomeIcon icon;
@@ -46,8 +49,10 @@
 
 @end
 
-@interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate,QLPreviewControllerDataSource>
 @property (strong,nonatomic) UICollectionView *collectionView;
+
+@property (copy,nonatomic) NSURL *previewURL;
 @end
 
 @implementation ViewController
@@ -82,6 +87,29 @@
     [cell setIcon:(BBFontAwesomeIcon)indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UIImage *image = [UIImage BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)indexPath.row foregroundColor:self.collectionView.tintColor size:[UIScreen mainScreen].bounds.size];
+    NSData *data = UIImagePNGRepresentation(image);
+    NSURL *previewURL = [NSURL fileURLWithPath:[[NSTemporaryDirectory() stringByAppendingPathComponent:[[NSUUID UUID] UUIDString]] stringByAppendingPathExtension:@"png"]];
+    
+    [data writeToURL:previewURL options:NSDataWritingAtomic error:NULL];
+    
+    [self setPreviewURL:previewURL];
+    
+    QLPreviewController *previewController = [[QLPreviewController alloc] init];
+    
+    [previewController setDataSource:self];
+    
+    [self presentViewController:previewController animated:YES completion:nil];
+}
+
+- (NSInteger)numberOfPreviewItemsInPreviewController:(QLPreviewController *)controller {
+    return 1;
+}
+- (id<QLPreviewItem>)previewController:(QLPreviewController *)controller previewItemAtIndex:(NSInteger)index {
+    return self.previewURL;
 }
 
 @end
