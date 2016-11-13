@@ -483,6 +483,7 @@
 				7980E2691DD8C80B005A8F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7980E2881DD8C9FD005A8F31 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				7980E28A1DD8C9FD005A8F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
