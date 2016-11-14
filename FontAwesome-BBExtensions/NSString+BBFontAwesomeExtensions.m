@@ -128,6 +128,8 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeIdentifier.iconBarChart;
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeIdentifier.iconPlus;
+        case BBFontAwesomeIconQuestionCircleO:
+            return BBFontAwesomeIdentifier.iconQuestionCircleO;
         case BBFontAwesomeIconUser:
             return BBFontAwesomeIdentifier.iconUser;
         default:
@@ -192,6 +194,8 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeString.iconBarChart;
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeString.iconPlus;
+        case BBFontAwesomeIconQuestionCircleO:
+            return BBFontAwesomeString.iconQuestionCircleO;
         case BBFontAwesomeIconUser:
             return BBFontAwesomeString.iconUser;
         default:
