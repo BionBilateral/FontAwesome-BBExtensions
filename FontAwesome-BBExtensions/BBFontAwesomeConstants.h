@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconAngleRight,
     BBFontAwesomeIconAngleUp,
     BBFontAwesomeIconApple,
+    BBFontAwesomeIconArchive,
     
     BBFontAwesomeIconBarChart,
     BBFontAwesomeIconPlus,
@@ -81,6 +82,7 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconAngleRight;
     __unsafe_unretained NSString *iconAngleUp;
     __unsafe_unretained NSString *iconApple;
+    __unsafe_unretained NSString *iconArchive;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
@@ -115,6 +117,7 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconAngleRight;
     __unsafe_unretained NSString *iconAngleUp;
     __unsafe_unretained NSString *iconApple;
+    __unsafe_unretained NSString *iconArchive;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
