@@ -58,6 +58,10 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconArrowCircleLeftO,
     BBFontAwesomeIconArrowCircleRightO,
     BBFontAwesomeIconArrowCircleUpO,
+    BBFontAwesomeIconArrowDown,
+    BBFontAwesomeIconArrowLeft,
+    BBFontAwesomeIconArrowRight,
+    BBFontAwesomeIconArrowUp,
     
     BBFontAwesomeIconBarChart,
     BBFontAwesomeIconPlus,
@@ -108,6 +112,10 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconArrowCircleLeftO;
     __unsafe_unretained NSString *iconArrowCircleRightO;
     __unsafe_unretained NSString *iconArrowCircleUpO;
+    __unsafe_unretained NSString *iconArrowDown;
+    __unsafe_unretained NSString *iconArrowLeft;
+    __unsafe_unretained NSString *iconArrowRight;
+    __unsafe_unretained NSString *iconArrowUp;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
@@ -156,6 +164,10 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconArrowCircleLeftO;
     __unsafe_unretained NSString *iconArrowCircleRightO;
     __unsafe_unretained NSString *iconArrowCircleUpO;
+    __unsafe_unretained NSString *iconArrowDown;
+    __unsafe_unretained NSString *iconArrowLeft;
+    __unsafe_unretained NSString *iconArrowRight;
+    __unsafe_unretained NSString *iconArrowUp;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
