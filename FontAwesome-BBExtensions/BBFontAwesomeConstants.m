@@ -51,6 +51,7 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconArrowCircleDownO = @"fa-arrow-circle-o-down",
     .iconArrowCircleLeftO = @"fa-arrow-circle-o-left",
     .iconArrowCircleRightO = @"fa-arrow-circle-o-right",
+    .iconArrowCircleUpO = @"fa-arrow-circle-o-up",
     
     .iconBarChart = @"fa-bar-chart",
     .iconPlus = @"fa-plus",
@@ -95,6 +96,7 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconArrowCircleDownO = @"\uf01a",
     .iconArrowCircleLeftO = @"\uf190",
     .iconArrowCircleRightO = @"\uf18e",
+    .iconArrowCircleUpO = @"\uf01b",
     
     .iconBarChart = @"\uf080",
     .iconPlus = @"\uf067",
