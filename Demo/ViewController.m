@@ -19,6 +19,34 @@
 
 #import <QuickLook/QuickLook.h>
 
+@interface PreviewItem : NSObject <QLPreviewItem>
+@property (copy,nonatomic) NSURL *URL;
+@property (copy,nonatomic) NSString *title;
+
+- (instancetype)initWithURL:(NSURL *)URL title:(NSString *)title;
+@end
+
+@implementation PreviewItem
+
+- (NSURL *)previewItemURL {
+    return self.URL;
+}
+- (NSString *)previewItemTitle {
+    return self.title;
+}
+
+- (instancetype)initWithURL:(NSURL *)URL title:(NSString *)title; {
+    if (!(self = [super init]))
+        return nil;
+    
+    _URL = URL;
+    _title = title;
+    
+    return self;
+}
+
+@end
+
 @interface CollectionViewCell : UICollectionViewCell
 @property (assign,nonatomic) BBFontAwesomeIcon icon;
 @property (strong,nonatomic) UIImageView *imageView;
@@ -52,7 +80,7 @@
 @interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate,QLPreviewControllerDataSource>
 @property (strong,nonatomic) UICollectionView *collectionView;
 
-@property (copy,nonatomic) NSURL *previewURL;
+@property (strong,nonatomic) PreviewItem *previewItem;
 @end
 
 @implementation ViewController
@@ -96,7 +124,7 @@
     
     [data writeToURL:previewURL options:NSDataWritingAtomic error:NULL];
     
-    [self setPreviewURL:previewURL];
+    [self setPreviewItem:[[PreviewItem alloc] initWithURL:previewURL title:[NSString BB_fontAwesomeIdentifierForIcon:(BBFontAwesomeIcon)indexPath.row]]];
     
     QLPreviewController *previewController = [[QLPreviewController alloc] init];
     
@@ -109,7 +137,7 @@
     return 1;
 }
 - (id<QLPreviewItem>)previewController:(QLPreviewController *)controller previewItemAtIndex:(NSInteger)index {
-    return self.previewURL;
+    return self.previewItem;
 }
 
 @end
