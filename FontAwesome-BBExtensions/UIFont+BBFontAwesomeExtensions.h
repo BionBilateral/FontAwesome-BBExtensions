@@ -15,13 +15,36 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ The default name for the Font Awesome font, which is "FontAwesome". It is easiest to name the font file included in your bundle this name. If not, you need to set the appropriate name using BB_setFontAwesomeFontName:.
+ */
 extern NSString *const BBFontAwesomeFontNameDefault;
 
 @interface UIFont (BBFontAwesomeExtensions)
 
+/**
+ Returns the name of the Font Awesome font if set, otherwise returns BBFontAwesomeFontNameDefault.
+ 
+ @return The name of the Font Awesome font
+ */
 + (NSString *)BB_fontAwesomeFontName;
+/**
+ Sets the name of the Font Awesome font. Use this to set a name other than "FontAwesome" if necessary.
+ 
+ @param fontName The Font Awesome font name
+ */
 + (void)BB_setFontAwesomeFontName:(NSString *)fontName;
 
+/**
+ Returns the Font Awesome font at the provided size.
+ 
+ @param size The font size
+ @return The Font Awesome font
+ */
 + (UIFont *)BB_fontAwesomeFontOfSize:(CGFloat)size;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -16,10 +16,38 @@
 #import <UIKit/UIKit.h>
 #import "BBFontAwesomeConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIImage (BBFontAwesomeExtensions)
 
+/**
+ Calls `BB_fontAwesomeImageWithIcon:foregroundColor:backgroundColor:size:`, passing icon, nil, nil, and size.
+ 
+ @param icon The Font Awesome icon
+ @param size The desired size of the image
+ @return The Font Awesome image
+ */
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon size:(CGSize)size;
-+ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor size:(CGSize)size;
-+ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor size:(CGSize)size;
+/**
+ Calls `BB_fontAwesomeImageWithIcon:foregroundColor:backgroundColor:size:`, passing icon, foregroundColor, nil, and size.
+ 
+ @param icon The Font Awesome icon
+ @param foregroundColor The foreground color of the image
+ @param size The desired size of the image
+ @return The Font Awesome image
+ */
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(nullable UIColor *)foregroundColor size:(CGSize)size;
+/**
+ Draws the Font Awesome string into a graphics context of the provided size using the provided foreground and background colors.
+ 
+ @param icon The Font Awesome icon
+ @param foregroundColor The foreground color of the image, the default is [UIColor blackColor]
+ @param backgroundColor The background color of the image
+ @param size The desired size of the image
+ @return The Font Awesome image
+ */
++ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(nullable UIColor *)foregroundColor backgroundColor:(nullable UIColor *)backgroundColor size:(CGSize)size;
 
 @end
+
+NS_ASSUME_NONNULL_END

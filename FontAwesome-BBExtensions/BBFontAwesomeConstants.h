@@ -18,6 +18,9 @@
 
 #import <Foundation/NSString.h>
 
+/**
+ Enum describing the available Font Awesome icons.
+ */
 typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIcon500PX = 0,
     BBFontAwesomeIconAddressBook,
@@ -48,6 +51,7 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconArchive,
     BBFontAwesomeIconAreaChart,
     BBFontAwesomeIconArrowCircleDown,
+    BBFontAwesomeIconArrowCircleLeft,
     
     BBFontAwesomeIconBarChart,
     BBFontAwesomeIconPlus,
@@ -58,6 +62,9 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BB_FONT_AWESOME_ICON_TOTAL_ICONS
 };
 
+/**
+ Struct containing string identifiers for the available Font Awesome icons. The identifiers match CSS class used on the Font Awesome cheat sheet at http://fontawesome.io/cheatsheet/.
+ */
 extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *icon500PX;
     __unsafe_unretained NSString *iconAddressBook;
@@ -88,6 +95,7 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconArchive;
     __unsafe_unretained NSString *iconAreaChart;
     __unsafe_unretained NSString *iconArrowCircleDown;
+    __unsafe_unretained NSString *iconArrowCircleLeft;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;
@@ -96,6 +104,9 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconUser;
 } BBFontAwesomeIdentifier;
 
+/**
+ Struct containing string text for the available Font Awesome icons. The text match the Unicode text used on the Font Awesome cheat sheet at http://fontawesome.io/cheatsheet/.
+ */
 extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *icon500PX;
     __unsafe_unretained NSString *iconAddressBook;
@@ -126,6 +137,7 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconArchive;
     __unsafe_unretained NSString *iconAreaChart;
     __unsafe_unretained NSString *iconArrowCircleDown;
+    __unsafe_unretained NSString *iconArrowCircleLeft;
     
     __unsafe_unretained NSString *iconBarChart;
     __unsafe_unretained NSString *iconPlus;

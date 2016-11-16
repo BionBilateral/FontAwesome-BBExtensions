@@ -16,12 +16,40 @@
 #import <Foundation/Foundation.h>
 #import "BBFontAwesomeConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSString (BBFontAwesomeExtensions)
 
+/**
+ Returns the Font Awesome identifier for the provided icon.
+ 
+ @param icon The Font Awesome icon, see BBFontAwesomeIcon
+ @return The Font Awesome identifier, see BBFontAwesomeIdentifier
+ */
 + (NSString *)BB_fontAwesomeIdentifierForIcon:(BBFontAwesomeIcon)icon;
+/**
+ Returns the Font Awesome icon for the provided identifier.
+ 
+ @param identifier The Font Awesome identifier, see BBFontAwesomeIdentifier
+ @return The Font Awesome icon, see BBFontAwesomeIcon
+ */
 + (BBFontAwesomeIcon)BB_fontAwesomeIconForIdentifier:(NSString *)identifier;
 
+/**
+ Returns the Font Awesome string for the provided icon.
+ 
+ @param icon The Font Awesome icon, see BBFontAwesomeIcon
+ @return The Font Awesome string, see BBFontAwesomeString
+ */
 + (NSString *)BB_fontAwesomeStringForIcon:(BBFontAwesomeIcon)icon;
-+ (NSString *)BB_fontAwesomeStringForIdentifier:(NSString *)identifier;
+/**
+ Returns the Font Awesome string for the provided identifier.
+ 
+ @param identifier The Font Awesome identifier, see BBFontAwesomeIdentifier
+ @return The Font Awesome string, see BBFontAwesomeString
+ */
++ (nullable NSString *)BB_fontAwesomeStringForIdentifier:(NSString *)identifier;
 
 @end
+
+NS_ASSUME_NONNULL_END
