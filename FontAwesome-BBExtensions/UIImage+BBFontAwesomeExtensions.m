@@ -17,18 +17,22 @@
 #import "UIFont+BBFontAwesomeExtensions.h"
 #import "NSString+BBFontAwesomeExtensions.h"
 
+static CGRect kBBFontAwesomeCGRectCenterInRect(CGRect rect_to_center, CGRect in_rect) {
+    return CGRectMake(floor(CGRectGetMinX(in_rect) + (CGRectGetWidth(in_rect) * 0.5) - (CGRectGetWidth(rect_to_center) * 0.5)),
+                      floor(CGRectGetMinY(in_rect) + (CGRectGetHeight(in_rect) * 0.5) - (CGRectGetHeight(rect_to_center) * 0.5)),
+                      CGRectGetWidth(rect_to_center),
+                      CGRectGetHeight(rect_to_center));
+}
+
 @implementation UIImage (BBFontAwesomeExtensions)
 
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon size:(CGSize)size; {
-    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:nil backgroundColor:nil scale:0.0 size:size];
+    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:nil backgroundColor:nil size:size];
 }
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor size:(CGSize)size; {
-    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:nil scale:0.0 size:size];
+    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:nil size:size];
 }
 + (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor size:(CGSize)size; {
-    return [self BB_fontAwesomeImageWithIcon:icon foregroundColor:foregroundColor backgroundColor:backgroundColor scale:0.0 size:size];
-}
-+ (UIImage *)BB_fontAwesomeImageWithIcon:(BBFontAwesomeIcon)icon foregroundColor:(UIColor *)foregroundColor backgroundColor:(UIColor *)backgroundColor scale:(CGFloat)scale size:(CGSize)size; {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     
     if (backgroundColor != nil) {
@@ -36,13 +40,25 @@
         UIRectFill(CGRectMake(0, 0, size.width, size.height));
     }
     
-    if (scale == 0.0) {
-        scale = 1.0;
+    NSString *text = [NSString BB_fontAwesomeStringForIcon:icon];
+    CGFloat pointSize = MIN(size.width, size.height);
+    CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
+    
+    while (textSize.width <= size.width &&
+           textSize.height <= size.height) {
+        
+        pointSize++;
+        textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
     }
     
-    NSString *text = [NSString BB_fontAwesomeStringForIcon:icon];
-    CGFloat pointSize = MIN(size.width, size.height) * scale;
-    CGRect rect = CGRectMake((size.width * 0.5) - (pointSize * 0.5), (size.height * 0.5) - (pointSize * 0.5), pointSize, pointSize);
+    while (textSize.width > size.width ||
+           textSize.height > size.height) {
+        
+        pointSize--;
+        textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
+    }
+    
+    CGRect rect = kBBFontAwesomeCGRectCenterInRect(CGRectMake(0, 0, textSize.width, textSize.height), CGRectMake(0, 0, size.width, size.height));
     
     if (foregroundColor == nil) {
         foregroundColor = [UIColor blackColor];
