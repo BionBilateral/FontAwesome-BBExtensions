@@ -43,6 +43,7 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconAngleUp = @"fa-angle-up",
     .iconApple = @"fa-apple",
     .iconArchive = @"fa-archive",
+    .iconAreaChart = @"fa-area-chart",
     
     .iconBarChart = @"fa-bar-chart",
     .iconPlus = @"fa-plus",
@@ -79,6 +80,7 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconAngleUp = @"\uf106",
     .iconApple = @"\uf179",
     .iconArchive = @"\uf187",
+    .iconAreaChart = @"\uf1fe",
     
     .iconBarChart = @"\uf080",
     .iconPlus = @"\uf067",
