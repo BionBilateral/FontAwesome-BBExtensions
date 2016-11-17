@@ -1,8 +1,8 @@
 //
-//  UIFont+BBFontAwesomeExtensions.h
+//  UIButton+BBFontAwesomeExtensions.h
 //  FontAwesome-BBExtensions
 //
-//  Created by William Towe on 11/13/16.
+//  Created by William Towe on 11/17/16.
 //  Copyright © 2016 Bion Bilateral, LLC. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -14,29 +14,17 @@
 //  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "BBFontAwesomeConstants.h"
 
-NS_ASSUME_NONNULL_BEGIN
+IB_DESIGNABLE
+@interface UIButton (BBFontAwesomeExtensions)
 
-/**
- The default name for the Font Awesome font, which is "FontAwesome". It is easiest to name the font file included in your bundle this name. If not, you need to set the appropriate name using BB_setFontAwesomeFontName:.
- */
-extern NSString *const BBFontAwesomeFontNameDefault;
+@property (copy,nonatomic,setter=BB_setFontAwesomeIdentifier:) IBInspectable NSString *BB_fontAwesomeIdentifier;
+@property (assign,nonatomic,setter=BB_setFontAwesomeSize:) IBInspectable CGSize BB_fontAwesomeSize;
 
-@interface UIFont (BBFontAwesomeExtensions)
+@property (assign,nonatomic,setter=BB_setFontAwesomeIcon:) BBFontAwesomeIcon BB_fontAwesomeIcon;
 
-/**
- Set and get the Font Awesome font name. Use this to set a name other than "FontAwesome" if necessary.
- */
-@property (copy,class,nonatomic,setter=BB_setFontAwesomeFontName:) NSString *BB_fontAwesomeFontName;
-
-/**
- Returns the Font Awesome font at the provided size.
- 
- @param size The font size
- @return The Font Awesome font
- */
-+ (UIFont *)BB_fontAwesomeFontOfSize:(CGFloat)size;
+- (NSString *)BB_fontAwesomeIdentifierForState:(UIControlState)state;
+- (void)BB_setFontAwesomeIdentifier:(NSString *)fontAwesomeIdentifier forState:(UIControlState)state;
 
 @end
-
-NS_ASSUME_NONNULL_END

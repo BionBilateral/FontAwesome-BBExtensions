@@ -22,3 +22,4 @@ FOUNDATION_EXPORT const unsigned char FontAwesome_BBExtensionsVersionString[];
 #import <FontAwesome_BBExtensions/NSString+BBFontAwesomeExtensions.h>
 #import <FontAwesome_BBExtensions/UIFont+BBFontAwesomeExtensions.h>
 #import <FontAwesome_BBExtensions/UIImage+BBFontAwesomeExtensions.h>
+#import <FontAwesome_BBExtensions/UIButton+BBFontAwesomeExtensions.h>
