@@ -26,7 +26,6 @@
 		7980E2991DD8DC91005A8F31 /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */; };
 		79BFA8101DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79BFA8111DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */; };
-		79BFA8151DDE104A0053AA91 /* BBFontAwesomeDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA8141DDE10430053AA91 /* BBFontAwesomeDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFontAwesomeConstants.m; sourceTree = "<group>"; };
 		79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
 		79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
-		79BFA8141DDE10430053AA91 /* BBFontAwesomeDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */,
-				79BFA8141DDE10430053AA91 /* BBFontAwesomeDefines.h */,
 				7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */,
 				7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */,
 				7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */,
@@ -160,7 +157,6 @@
 				7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */,
 				7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */,
 				79BFA8101DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h in Headers */,
-				79BFA8151DDE104A0053AA91 /* BBFontAwesomeDefines.h in Headers */,
 				7980E2951DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */,
 			);
