@@ -62,9 +62,16 @@ static const void *kFontAwesomeSizeKey = &kFontAwesomeSizeKey;
     return self.BB_controlStatesToFontAwesomeIdentifiers[@(state)];
 }
 - (void)BB_setFontAwesomeIdentifier:(NSString *)fontAwesomeIdentifier forState:(UIControlState)state; {
-    [self.BB_controlStatesToFontAwesomeIdentifiers setObject:fontAwesomeIdentifier forKey:@(state)];
-    
-    [self setImage:[UIImage BB_fontAwesomeImageWithIcon:[NSString BB_fontAwesomeIconForIdentifier:fontAwesomeIdentifier] size:self.BB_fontAwesomeSize] forState:state];
+    if (fontAwesomeIdentifier == nil) {
+        [self.BB_controlStatesToFontAwesomeIdentifiers removeObjectForKey:@(state)];
+        
+        [self setImage:nil forState:state];
+    }
+    else {
+        [self.BB_controlStatesToFontAwesomeIdentifiers setObject:fontAwesomeIdentifier forKey:@(state)];
+        
+        [self setImage:[UIImage BB_fontAwesomeImageWithIcon:[NSString BB_fontAwesomeIconForIdentifier:fontAwesomeIdentifier] size:self.BB_fontAwesomeSize] forState:state];
+    }
 }
 
 @end
