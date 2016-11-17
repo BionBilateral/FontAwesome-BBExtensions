@@ -56,6 +56,7 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconArrowLeft = @"fa-arrow-left",
     .iconArrowRight = @"fa-arrow-right",
     .iconArrowUp = @"fa-arrow-up",
+    .iconArrows = @"fa-arrows",
     
     .iconBarChart = @"fa-bar-chart",
     .iconPlus = @"fa-plus",
@@ -105,6 +106,7 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconArrowLeft = @"\uf060",
     .iconArrowRight = @"\uf061",
     .iconArrowUp = @"\uf062",
+    .iconArrows = @"\uf047",
     
     .iconBarChart = @"\uf080",
     .iconPlus = @"\uf067",
