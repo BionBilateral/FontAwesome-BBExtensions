@@ -47,4 +47,19 @@
  */
 - (void)BB_setFontAwesomeIdentifier:(NSString *)fontAwesomeIdentifier forState:(UIControlState)state;
 
+/**
+ Returns the Font Awesome icon set for the provided control state.
+ 
+ @param state The control state
+ @return The Font Awesome icon
+ */
+- (BBFontAwesomeIcon)BB_fontAwesomeIconForState:(UIControlState)state;
+/**
+ Calls through to BB_setFontAwesomeIdentifier:forState:, passing [NSString BB_fontAwesomeIdentifierForIcon:icon] and state.
+ 
+ @param icon The Font Awesome icon
+ @param state The control state
+ */
+- (void)BB_setFontAwesomeIcon:(BBFontAwesomeIcon)icon forState:(UIControlState)state;
+
 @end

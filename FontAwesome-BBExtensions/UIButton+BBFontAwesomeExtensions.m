@@ -74,6 +74,13 @@ static const void *kFontAwesomeSizeKey = &kFontAwesomeSizeKey;
     }
 }
 
+- (BBFontAwesomeIcon)BB_fontAwesomeIconForState:(UIControlState)state; {
+    return [NSString BB_fontAwesomeIconForIdentifier:[self BB_fontAwesomeIdentifierForState:state]];
+}
+- (void)BB_setFontAwesomeIcon:(BBFontAwesomeIcon)icon forState:(UIControlState)state; {
+    [self BB_setFontAwesomeIdentifier:[NSString BB_fontAwesomeIdentifierForIcon:icon] forState:state];
+}
+
 @end
 
 @implementation UIButton (BBFontAwesomeExtensionsPrivate)
