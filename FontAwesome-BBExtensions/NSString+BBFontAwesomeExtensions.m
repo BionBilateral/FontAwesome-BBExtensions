@@ -158,6 +158,8 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeIdentifier.iconArrowsAlt;
         case BBFontAwesomeIconArrowsHorizontal:
             return BBFontAwesomeIdentifier.iconArrowsHorizontal;
+        case BBFontAwesomeIconArrowsVertical:
+            return BBFontAwesomeIdentifier.iconArrowsVertical;
             
         case BBFontAwesomeIconBarChart:
             return BBFontAwesomeIdentifier.iconBarChart;
@@ -261,6 +263,8 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeString.iconArrowsAlt;
         case BBFontAwesomeIconArrowsHorizontal:
             return BBFontAwesomeString.iconArrowsHorizontal;
+        case BBFontAwesomeIconArrowsVertical:
+            return BBFontAwesomeString.iconArrowsVertical;
             
         case BBFontAwesomeIconBarChart:
             return BBFontAwesomeString.iconBarChart;
