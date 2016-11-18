@@ -19,6 +19,8 @@
 
 #import <QuickLook/QuickLook.h>
 
+static CGSize const kItemSize = {.width=64, .height=64};
+
 @interface PreviewItem : NSObject <QLPreviewItem>
 @property (copy,nonatomic) NSURL *URL;
 @property (copy,nonatomic) NSString *title;
@@ -68,11 +70,12 @@
     [super layoutSubviews];
     
     [self.imageView setFrame:self.contentView.bounds];
-    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:self.icon foregroundColor:self.tintColor size:self.imageView.frame.size]];
 }
 
 - (void)setIcon:(BBFontAwesomeIcon)icon {
     _icon = icon;
+    
+    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:self.icon foregroundColor:self.tintColor size:kItemSize]];
 }
 
 @end
@@ -93,7 +96,7 @@
     [layout setSectionInset:UIEdgeInsetsMake(8, 8, 0, 8)];
     [layout setMinimumLineSpacing:8.0];
     [layout setMinimumInteritemSpacing:8.0];
-    [layout setItemSize:CGSizeMake(64, 64)];
+    [layout setItemSize:kItemSize];
     
     [self setCollectionView:[[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout]];
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
