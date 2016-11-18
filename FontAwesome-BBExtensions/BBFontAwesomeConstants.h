@@ -68,8 +68,51 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconArrowsVertical,
     BBFontAwesomeIconAssistiveListeningSystems,
     BBFontAwesomeIconAsterisk,
-    
+    BBFontAwesomeIconAt,
+    BBFontAwesomeIconAudioDescription,
+    BBFontAwesomeIconBackward,
+    BBFontAwesomeIconBalanceScale,
+    BBFontAwesomeIconBan,
+    BBFontAwesomeIconBandcamp,
     BBFontAwesomeIconBarChart,
+    BBFontAwesomeIconBarcode,
+    BBFontAwesomeIconBars,
+    BBFontAwesomeIconBath,
+    BBFontAwesomeIconBatteryEmpty,
+    BBFontAwesomeIconBatteryFull,
+    BBFontAwesomeIconBatteryHalf,
+    BBFontAwesomeIconBatteryQuarter,
+    BBFontAwesomeIconBatteryThreeQuarters,
+    BBFontAwesomeIconBed,
+    BBFontAwesomeIconBeer,
+    BBFontAwesomeIconBehance,
+    BBFontAwesomeIconBehanceSquare,
+    BBFontAwesomeIconBell,
+    BBFontAwesomeIconBellO,
+    BBFontAwesomeIconBellSlash,
+    BBFontAwesomeIconBellSlashO,
+    BBFontAwesomeIconBicycle,
+    BBFontAwesomeIconBinoculars,
+    BBFontAwesomeIconBirthdayCake,
+    BBFontAwesomeIconBitbucket,
+    BBFontAwesomeIconBitbucketSquare,
+    BBFontAwesomeIconBlackTie,
+    BBFontAwesomeIconBlind,
+    BBFontAwesomeIconBluetooth,
+    BBFontAwesomeIconBluetoothB,
+    BBFontAwesomeIconBold,
+    BBFontAwesomeIconBolt,
+    BBFontAwesomeIconBomb,
+    BBFontAwesomeIconBook,
+    BBFontAwesomeIconBookmark,
+    BBFontAwesomeIconBookmarkO,
+    BBFontAwesomeIconBraille,
+    BBFontAwesomeIconBriefcase,
+    BBFontAwesomeIconBTC,
+    BBFontAwesomeIconBug,
+    BBFontAwesomeIconBuilding,
+    BBFontAwesomeIconBuildingO,
+    
     BBFontAwesomeIconPlus,
     BBFontAwesomeIconQuestionCircleO,
     BBFontAwesomeIconStar,
@@ -79,7 +122,7 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
 };
 
 /**
- Struct containing string identifiers for the available Font Awesome icons. The identifiers match CSS class used on the Font Awesome cheat sheet at http://fontawesome.io/cheatsheet/.
+ Struct containing string identifiers for the available Font Awesome icons. The identifiers match the CSS class used on the Font Awesome cheat sheet at http://fontawesome.io/cheatsheet/.
  */
 extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *icon500PX;
@@ -128,8 +171,51 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconArrowsVertical;
     __unsafe_unretained NSString *iconAssistiveListeningSystems;
     __unsafe_unretained NSString *iconAsterisk;
-    
+    __unsafe_unretained NSString *iconAt;
+    __unsafe_unretained NSString *iconAudioDescription;
+    __unsafe_unretained NSString *iconBackward;
+    __unsafe_unretained NSString *iconBalanceScale;
+    __unsafe_unretained NSString *iconBan;
+    __unsafe_unretained NSString *iconBandcamp;
     __unsafe_unretained NSString *iconBarChart;
+    __unsafe_unretained NSString *iconBarcode;
+    __unsafe_unretained NSString *iconBars;
+    __unsafe_unretained NSString *iconBath;
+    __unsafe_unretained NSString *iconBatteryEmpty;
+    __unsafe_unretained NSString *iconBatteryFull;
+    __unsafe_unretained NSString *iconBatteryHalf;
+    __unsafe_unretained NSString *iconBatteryQuarter;
+    __unsafe_unretained NSString *iconBatteryThreeQuarters;
+    __unsafe_unretained NSString *iconBed;
+    __unsafe_unretained NSString *iconBeer;
+    __unsafe_unretained NSString *iconBehance;
+    __unsafe_unretained NSString *iconBehanceSquare;
+    __unsafe_unretained NSString *iconBell;
+    __unsafe_unretained NSString *iconBellO;
+    __unsafe_unretained NSString *iconBellSlash;
+    __unsafe_unretained NSString *iconBellSlashO;
+    __unsafe_unretained NSString *iconBicycle;
+    __unsafe_unretained NSString *iconBinoculars;
+    __unsafe_unretained NSString *iconBirthdayCake;
+    __unsafe_unretained NSString *iconBitbucket;
+    __unsafe_unretained NSString *iconBitbucketSquare;
+    __unsafe_unretained NSString *iconBlackTie;
+    __unsafe_unretained NSString *iconBlind;
+    __unsafe_unretained NSString *iconBluetooth;
+    __unsafe_unretained NSString *iconBluetoothB;
+    __unsafe_unretained NSString *iconBold;
+    __unsafe_unretained NSString *iconBolt;
+    __unsafe_unretained NSString *iconBomb;
+    __unsafe_unretained NSString *iconBook;
+    __unsafe_unretained NSString *iconBookmark;
+    __unsafe_unretained NSString *iconBookmarkO;
+    __unsafe_unretained NSString *iconBraille;
+    __unsafe_unretained NSString *iconBriefcase;
+    __unsafe_unretained NSString *iconBTC;
+    __unsafe_unretained NSString *iconBug;
+    __unsafe_unretained NSString *iconBuilding;
+    __unsafe_unretained NSString *iconBuildingO;
+    
     __unsafe_unretained NSString *iconPlus;
     __unsafe_unretained NSString *iconQuestionCircleO;
     __unsafe_unretained NSString *iconStar;
@@ -186,8 +272,51 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconArrowsVertical;
     __unsafe_unretained NSString *iconAssistiveListeningSystems;
     __unsafe_unretained NSString *iconAsterisk;
-    
+    __unsafe_unretained NSString *iconAt;
+    __unsafe_unretained NSString *iconAudioDescription;
+    __unsafe_unretained NSString *iconBackward;
+    __unsafe_unretained NSString *iconBalanceScale;
+    __unsafe_unretained NSString *iconBan;
+    __unsafe_unretained NSString *iconBandcamp;
     __unsafe_unretained NSString *iconBarChart;
+    __unsafe_unretained NSString *iconBarcode;
+    __unsafe_unretained NSString *iconBars;
+    __unsafe_unretained NSString *iconBath;
+    __unsafe_unretained NSString *iconBatteryEmpty;
+    __unsafe_unretained NSString *iconBatteryFull;
+    __unsafe_unretained NSString *iconBatteryHalf;
+    __unsafe_unretained NSString *iconBatteryQuarter;
+    __unsafe_unretained NSString *iconBatteryThreeQuarters;
+    __unsafe_unretained NSString *iconBed;
+    __unsafe_unretained NSString *iconBeer;
+    __unsafe_unretained NSString *iconBehance;
+    __unsafe_unretained NSString *iconBehanceSquare;
+    __unsafe_unretained NSString *iconBell;
+    __unsafe_unretained NSString *iconBellO;
+    __unsafe_unretained NSString *iconBellSlash;
+    __unsafe_unretained NSString *iconBellSlashO;
+    __unsafe_unretained NSString *iconBicycle;
+    __unsafe_unretained NSString *iconBinoculars;
+    __unsafe_unretained NSString *iconBirthdayCake;
+    __unsafe_unretained NSString *iconBitbucket;
+    __unsafe_unretained NSString *iconBitbucketSquare;
+    __unsafe_unretained NSString *iconBlackTie;
+    __unsafe_unretained NSString *iconBlind;
+    __unsafe_unretained NSString *iconBluetooth;
+    __unsafe_unretained NSString *iconBluetoothB;
+    __unsafe_unretained NSString *iconBold;
+    __unsafe_unretained NSString *iconBolt;
+    __unsafe_unretained NSString *iconBomb;
+    __unsafe_unretained NSString *iconBook;
+    __unsafe_unretained NSString *iconBookmark;
+    __unsafe_unretained NSString *iconBookmarkO;
+    __unsafe_unretained NSString *iconBraille;
+    __unsafe_unretained NSString *iconBriefcase;
+    __unsafe_unretained NSString *iconBTC;
+    __unsafe_unretained NSString *iconBug;
+    __unsafe_unretained NSString *iconBuilding;
+    __unsafe_unretained NSString *iconBuildingO;
+    
     __unsafe_unretained NSString *iconPlus;
     __unsafe_unretained NSString *iconQuestionCircleO;
     __unsafe_unretained NSString *iconStar;

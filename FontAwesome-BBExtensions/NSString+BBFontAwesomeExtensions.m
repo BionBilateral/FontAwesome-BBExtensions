@@ -164,9 +164,95 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeIdentifier.iconAssistiveListeningSystems;
         case BBFontAwesomeIconAsterisk:
             return BBFontAwesomeIdentifier.iconAsterisk;
-            
+        case BBFontAwesomeIconAt:
+            return BBFontAwesomeIdentifier.iconAt;
+        case BBFontAwesomeIconAudioDescription:
+            return BBFontAwesomeIdentifier.iconAudioDescription;
+        case BBFontAwesomeIconBackward:
+            return BBFontAwesomeIdentifier.iconBackward;
+        case BBFontAwesomeIconBalanceScale:
+            return BBFontAwesomeIdentifier.iconBalanceScale;
+        case BBFontAwesomeIconBan:
+            return BBFontAwesomeIdentifier.iconBan;
+        case BBFontAwesomeIconBandcamp:
+            return BBFontAwesomeIdentifier.iconBandcamp;
         case BBFontAwesomeIconBarChart:
             return BBFontAwesomeIdentifier.iconBarChart;
+        case BBFontAwesomeIconBarcode:
+            return BBFontAwesomeIdentifier.iconBarcode;
+        case BBFontAwesomeIconBars:
+            return BBFontAwesomeIdentifier.iconBars;
+        case BBFontAwesomeIconBath:
+            return BBFontAwesomeIdentifier.iconBath;
+        case BBFontAwesomeIconBatteryEmpty:
+            return BBFontAwesomeIdentifier.iconBatteryEmpty;
+        case BBFontAwesomeIconBatteryFull:
+            return BBFontAwesomeIdentifier.iconBatteryFull;
+        case BBFontAwesomeIconBatteryHalf:
+            return BBFontAwesomeIdentifier.iconBatteryHalf;
+        case BBFontAwesomeIconBatteryQuarter:
+            return BBFontAwesomeIdentifier.iconBatteryQuarter;
+        case BBFontAwesomeIconBatteryThreeQuarters:
+            return BBFontAwesomeIdentifier.iconBatteryThreeQuarters;
+        case BBFontAwesomeIconBed:
+            return BBFontAwesomeIdentifier.iconBed;
+        case BBFontAwesomeIconBeer:
+            return BBFontAwesomeIdentifier.iconBeer;
+        case BBFontAwesomeIconBehance:
+            return BBFontAwesomeIdentifier.iconBehance;
+        case BBFontAwesomeIconBehanceSquare:
+            return BBFontAwesomeIdentifier.iconBehanceSquare;
+        case BBFontAwesomeIconBell:
+            return BBFontAwesomeIdentifier.iconBell;
+        case BBFontAwesomeIconBellO:
+            return BBFontAwesomeIdentifier.iconBellO;
+        case BBFontAwesomeIconBellSlash:
+            return BBFontAwesomeIdentifier.iconBellSlash;
+        case BBFontAwesomeIconBellSlashO:
+            return BBFontAwesomeIdentifier.iconBellSlashO;
+        case BBFontAwesomeIconBicycle:
+            return BBFontAwesomeIdentifier.iconBicycle;
+        case BBFontAwesomeIconBinoculars:
+            return BBFontAwesomeIdentifier.iconBinoculars;
+        case BBFontAwesomeIconBirthdayCake:
+            return BBFontAwesomeIdentifier.iconBirthdayCake;
+        case BBFontAwesomeIconBitbucket:
+            return BBFontAwesomeIdentifier.iconBitbucket;
+        case BBFontAwesomeIconBitbucketSquare:
+            return BBFontAwesomeIdentifier.iconBitbucketSquare;
+        case BBFontAwesomeIconBlackTie:
+            return BBFontAwesomeIdentifier.iconBlackTie;
+        case BBFontAwesomeIconBlind:
+            return BBFontAwesomeIdentifier.iconBlind;
+        case BBFontAwesomeIconBluetooth:
+            return BBFontAwesomeIdentifier.iconBluetooth;
+        case BBFontAwesomeIconBluetoothB:
+            return BBFontAwesomeIdentifier.iconBluetoothB;
+        case BBFontAwesomeIconBold:
+            return BBFontAwesomeIdentifier.iconBold;
+        case BBFontAwesomeIconBolt:
+            return BBFontAwesomeIdentifier.iconBolt;
+        case BBFontAwesomeIconBomb:
+            return BBFontAwesomeIdentifier.iconBomb;
+        case BBFontAwesomeIconBook:
+            return BBFontAwesomeIdentifier.iconBook;
+        case BBFontAwesomeIconBookmark:
+            return BBFontAwesomeIdentifier.iconBookmark;
+        case BBFontAwesomeIconBookmarkO:
+            return BBFontAwesomeIdentifier.iconBookmarkO;
+        case BBFontAwesomeIconBraille:
+            return BBFontAwesomeIdentifier.iconBraille;
+        case BBFontAwesomeIconBriefcase:
+            return BBFontAwesomeIdentifier.iconBriefcase;
+        case BBFontAwesomeIconBTC:
+            return BBFontAwesomeIdentifier.iconBTC;
+        case BBFontAwesomeIconBug:
+            return BBFontAwesomeIdentifier.iconBug;
+        case BBFontAwesomeIconBuilding:
+            return BBFontAwesomeIdentifier.iconBuilding;
+        case BBFontAwesomeIconBuildingO:
+            return BBFontAwesomeIdentifier.iconBuildingO;
+            
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeIdentifier.iconPlus;
         case BBFontAwesomeIconQuestionCircleO:
@@ -273,9 +359,95 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeString.iconAssistiveListeningSystems;
         case BBFontAwesomeIconAsterisk:
             return BBFontAwesomeString.iconAsterisk;
-            
+        case BBFontAwesomeIconAt:
+            return BBFontAwesomeString.iconAt;
+        case BBFontAwesomeIconAudioDescription:
+            return BBFontAwesomeString.iconAudioDescription;
+        case BBFontAwesomeIconBackward:
+            return BBFontAwesomeString.iconBackward;
+        case BBFontAwesomeIconBalanceScale:
+            return BBFontAwesomeString.iconBalanceScale;
+        case BBFontAwesomeIconBan:
+            return BBFontAwesomeString.iconBan;
+        case BBFontAwesomeIconBandcamp:
+            return BBFontAwesomeString.iconBandcamp;
         case BBFontAwesomeIconBarChart:
             return BBFontAwesomeString.iconBarChart;
+        case BBFontAwesomeIconBarcode:
+            return BBFontAwesomeString.iconBarcode;
+        case BBFontAwesomeIconBars:
+            return BBFontAwesomeString.iconBars;
+        case BBFontAwesomeIconBath:
+            return BBFontAwesomeString.iconBath;
+        case BBFontAwesomeIconBatteryEmpty:
+            return BBFontAwesomeString.iconBatteryEmpty;
+        case BBFontAwesomeIconBatteryFull:
+            return BBFontAwesomeString.iconBatteryFull;
+        case BBFontAwesomeIconBatteryHalf:
+            return BBFontAwesomeString.iconBatteryHalf;
+        case BBFontAwesomeIconBatteryQuarter:
+            return BBFontAwesomeString.iconBatteryQuarter;
+        case BBFontAwesomeIconBatteryThreeQuarters:
+            return BBFontAwesomeString.iconBatteryThreeQuarters;
+        case BBFontAwesomeIconBed:
+            return BBFontAwesomeString.iconBed;
+        case BBFontAwesomeIconBeer:
+            return BBFontAwesomeString.iconBeer;
+        case BBFontAwesomeIconBehance:
+            return BBFontAwesomeString.iconBehance;
+        case BBFontAwesomeIconBehanceSquare:
+            return BBFontAwesomeString.iconBehanceSquare;
+        case BBFontAwesomeIconBell:
+            return BBFontAwesomeString.iconBell;
+        case BBFontAwesomeIconBellO:
+            return BBFontAwesomeString.iconBellO;
+        case BBFontAwesomeIconBellSlash:
+            return BBFontAwesomeString.iconBellSlash;
+        case BBFontAwesomeIconBellSlashO:
+            return BBFontAwesomeString.iconBellSlashO;
+        case BBFontAwesomeIconBicycle:
+            return BBFontAwesomeString.iconBicycle;
+        case BBFontAwesomeIconBinoculars:
+            return BBFontAwesomeString.iconBinoculars;
+        case BBFontAwesomeIconBirthdayCake:
+            return BBFontAwesomeString.iconBirthdayCake;
+        case BBFontAwesomeIconBitbucket:
+            return BBFontAwesomeString.iconBitbucket;
+        case BBFontAwesomeIconBitbucketSquare:
+            return BBFontAwesomeString.iconBitbucketSquare;
+        case BBFontAwesomeIconBlackTie:
+            return BBFontAwesomeString.iconBlackTie;
+        case BBFontAwesomeIconBlind:
+            return BBFontAwesomeString.iconBlind;
+        case BBFontAwesomeIconBluetooth:
+            return BBFontAwesomeString.iconBluetooth;
+        case BBFontAwesomeIconBluetoothB:
+            return BBFontAwesomeString.iconBluetoothB;
+        case BBFontAwesomeIconBold:
+            return BBFontAwesomeString.iconBold;
+        case BBFontAwesomeIconBolt:
+            return BBFontAwesomeString.iconBolt;
+        case BBFontAwesomeIconBomb:
+            return BBFontAwesomeString.iconBomb;
+        case BBFontAwesomeIconBook:
+            return BBFontAwesomeString.iconBook;
+        case BBFontAwesomeIconBookmark:
+            return BBFontAwesomeString.iconBookmark;
+        case BBFontAwesomeIconBookmarkO:
+            return BBFontAwesomeString.iconBookmarkO;
+        case BBFontAwesomeIconBraille:
+            return BBFontAwesomeString.iconBraille;
+        case BBFontAwesomeIconBriefcase:
+            return BBFontAwesomeString.iconBriefcase;
+        case BBFontAwesomeIconBTC:
+            return BBFontAwesomeString.iconBTC;
+        case BBFontAwesomeIconBug:
+            return BBFontAwesomeString.iconBug;
+        case BBFontAwesomeIconBuilding:
+            return BBFontAwesomeString.iconBuilding;
+        case BBFontAwesomeIconBuildingO:
+            return BBFontAwesomeString.iconBuildingO;
+            
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeString.iconPlus;
         case BBFontAwesomeIconQuestionCircleO:
