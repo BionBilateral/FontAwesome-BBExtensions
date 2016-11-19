@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797E95F01DE0C20900077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
+		797E95F31DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E95F11DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E95F41DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E95F21DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m */; };
+		797E95F51DE0C91200077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */; };
+		797E95F61DE0C91600077C6C /* BBFontAwesomeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,7 +30,6 @@
 		7980E2981DD8CFBC005A8F31 /* BBFontAwesomeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */; };
 		7980E2991DD8DC91005A8F31 /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */; };
 		79BFA8101DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79BFA8111DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */; };
 		79BFA8271DE0BDC40053AA91 /* macOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */; };
 		79BFA8281DE0BE220053AA91 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79BFA8291DE0BE220053AA91 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +39,8 @@
 		79BFA8381DE0C0300053AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8371DE0C0300053AA91 /* Assets.xcassets */; };
 		79BFA83B1DE0C0300053AA91 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8391DE0C0300053AA91 /* MainMenu.xib */; };
 		79BFA8401DE0C10D0053AA91 /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */; };
+		79BFA8451DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA8431DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BFA8461DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA8441DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		797E95F11DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+BBFontAwesomeExtensions.h"; path = "macOS/NSImage+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
+		797E95F21DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+BBFontAwesomeExtensions.m"; path = "macOS/NSImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -77,7 +85,6 @@
 		7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BBFontAwesomeExtensions.m"; path = "iOS/UIImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
 		7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFontAwesomeConstants.m; sourceTree = "<group>"; };
 		79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+BBFontAwesomeExtensions.h"; path = "iOS/UIButton+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
-		79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BBFontAwesomeExtensions.m"; path = "iOS/UIButton+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
 		79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BFA8251DE0BDBF0053AA91 /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
 		79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macOS-Info.plist"; sourceTree = "<group>"; };
@@ -88,6 +95,8 @@
 		79BFA8371DE0C0300053AA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BFA83A1DE0C0300053AA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		79BFA83C1DE0C0300053AA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79BFA8431DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFont+BBFontAwesomeExtensions.h"; path = "macOS/NSFont+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
+		79BFA8441DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFont+BBFontAwesomeExtensions.m"; path = "macOS/NSFont+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +201,10 @@
 				7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */,
 				7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */,
 				79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */,
-				79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */,
+				79BFA8431DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h */,
+				79BFA8441DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m */,
+				797E95F11DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h */,
+				797E95F21DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -247,8 +259,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E95F31DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h in Headers */,
 				79BFA82A1DE0BE220053AA91 /* NSString+BBFontAwesomeExtensions.h in Headers */,
 				79BFA8281DE0BE220053AA91 /* FontAwesome_BBExtensions.h in Headers */,
+				79BFA8451DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h in Headers */,
 				79BFA8291DE0BE220053AA91 /* BBFontAwesomeConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +428,7 @@
 			files = (
 				79BFA8381DE0C0300053AA91 /* Assets.xcassets in Resources */,
 				79BFA83B1DE0C0300053AA91 /* MainMenu.xib in Resources */,
+				797E95F01DE0C20900077C6C /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +442,6 @@
 				7980E2981DD8CFBC005A8F31 /* BBFontAwesomeConstants.m in Sources */,
 				7980E2961DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m in Sources */,
 				7980E2921DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m in Sources */,
-				79BFA8111DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m in Sources */,
 				7980E26F1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +460,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E95F61DE0C91600077C6C /* BBFontAwesomeConstants.m in Sources */,
+				79BFA8461DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m in Sources */,
+				797E95F51DE0C91200077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */,
+				797E95F41DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +788,7 @@
 				79BFA8241DE0BD190053AA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79BFA83D1DE0C0300053AA91 /* Build configuration list for PBXNativeTarget "macOS-Demo" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +797,7 @@
 				79BFA83F1DE0C0300053AA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -26,4 +26,7 @@ FOUNDATION_EXPORT const unsigned char FontAwesome_BBExtensionsVersionString[];
 #if (!TARGET_OS_WATCH)
 #import <FontAwesome_BBExtensions/UIButton+BBFontAwesomeExtensions.h>
 #endif
+#else
+#import <FontAwesome_BBExtensions/NSFont+BBFontAwesomeExtensions.h>
+#import <FontAwesome_BBExtensions/NSImage+BBFontAwesomeExtensions.h>
 #endif
