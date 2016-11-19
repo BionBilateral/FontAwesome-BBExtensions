@@ -13,8 +13,9 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "3.0"
   s.source       = {:git => "https://github.com/BionBilateral/FontAwesome-BBExtensions.git", :tag => s.version.to_s}
   s.source_files  = "FontAwesome-BBExtensions/**/*.{h,m}"
-  s.watchos.exclude_files = "FontAwesome-BBExtensions/iOS/UIButton*.{h,m}", "FontAwesome-BBExtensions/macOS"
+  s.ios.exclude_files = "FontAwesome-BBExtensions/macOS"
   s.osx.exclude_files = "FontAwesome-BBExtensions/iOS"
+  s.watchos.exclude_files = "FontAwesome-BBExtensions/iOS/UIButton*.{h,m}", "FontAwesome-BBExtensions/macOS"
   s.frameworks = "Foundation", "UIKit"
   s.requires_arc = true
   s.header_dir = "FontAwesome_BBExtensions"
