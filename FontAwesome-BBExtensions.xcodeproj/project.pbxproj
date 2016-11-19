@@ -34,6 +34,7 @@
 		79BFA8361DE0C0300053AA91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA8351DE0C0300053AA91 /* main.m */; };
 		79BFA8381DE0C0300053AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8371DE0C0300053AA91 /* Assets.xcassets */; };
 		79BFA83B1DE0C0300053AA91 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8391DE0C0300053AA91 /* MainMenu.xib */; };
+		79BFA8401DE0C10D0053AA91 /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7980E25E1DD8C80B005A8F31;
 			remoteInfo = "FontAwesome-BBExtensions";
+		};
+		79BFA8411DE0C1180053AA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79BFA81C1DE0BD190053AA91;
+			remoteInfo = "macOS-FontAwesome-BBExtensions";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -109,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BFA8401DE0C10D0053AA91 /* FontAwesome_BBExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +321,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				79BFA8421DE0C1180053AA91 /* PBXTargetDependency */,
 			);
 			name = "macOS-Demo";
 			productName = "macOS-Demo";
@@ -455,6 +465,11 @@
 			isa = PBXTargetDependency;
 			target = 7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */;
 			targetProxy = 7980E28B1DD8CB79005A8F31 /* PBXContainerItemProxy */;
+		};
+		79BFA8421DE0C1180053AA91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79BFA81C1DE0BD190053AA91 /* macOS-FontAwesome-BBExtensions */;
+			targetProxy = 79BFA8411DE0C1180053AA91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
