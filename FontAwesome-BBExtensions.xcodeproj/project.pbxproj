@@ -22,6 +22,13 @@
 		797E961D1DE0F71800077C6C /* UIFont+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */; };
 		797E961E1DE0F71800077C6C /* UIImage+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */; };
 		797E96201DE0F72200077C6C /* UIButton+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E961F1DE0F72200077C6C /* UIButton+BBFontAwesomeExtensions.m */; };
+		797E96271DE0F78600077C6C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797E96251DE0F78600077C6C /* Interface.storyboard */; };
+		797E96291DE0F78600077C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E96281DE0F78600077C6C /* Assets.xcassets */; };
+		797E96301DE0F78600077C6C /* watchOS-Demo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		797E96361DE0F78600077C6C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96351DE0F78600077C6C /* InterfaceController.m */; };
+		797E96391DE0F78600077C6C /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96381DE0F78600077C6C /* ExtensionDelegate.m */; };
+		797E963B1DE0F78600077C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E963A1DE0F78600077C6C /* Assets.xcassets */; };
+		797E963F1DE0F78600077C6C /* watchOS-Demo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 797E96231DE0F78600077C6C /* watchOS-Demo.app */; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +61,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		797E96311DE0F78600077C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797E962E1DE0F78600077C6C;
+			remoteInfo = "watchOS-Demo Extension";
+		};
+		797E963D1DE0F78600077C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797E96221DE0F78600077C6C;
+			remoteInfo = "watchOS-Demo";
+		};
 		7980E28B1DD8CB79005A8F31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
@@ -70,6 +91,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		797E96431DE0F78600077C6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				797E96301DE0F78600077C6C /* watchOS-Demo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96471DE0F78600077C6C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				797E963F1DE0F78600077C6C /* watchOS-Demo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		797E95F11DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+BBFontAwesomeExtensions.h"; path = "macOS/NSImage+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
 		797E95F21DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+BBFontAwesomeExtensions.m"; path = "macOS/NSImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
@@ -77,6 +123,17 @@
 		797E960D1DE0F5A400077C6C /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		797E96151DE0F6CB00077C6C /* watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "watchOS-Info.plist"; sourceTree = "<group>"; };
 		797E961F1DE0F72200077C6C /* UIButton+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BBFontAwesomeExtensions.m"; path = "iOS/UIButton+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		797E96231DE0F78600077C6C /* watchOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797E96261DE0F78600077C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		797E96281DE0F78600077C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797E962A1DE0F78600077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchOS-Demo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797E96341DE0F78600077C6C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		797E96351DE0F78600077C6C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		797E96371DE0F78600077C6C /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		797E96381DE0F78600077C6C /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		797E963A1DE0F78600077C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797E963C1DE0F78600077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -121,6 +178,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		797E962C1DE0F78600077C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7980E25B1DD8C80B005A8F31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,12 +218,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797E96241DE0F78600077C6C /* watchOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				797E96251DE0F78600077C6C /* Interface.storyboard */,
+				797E96281DE0F78600077C6C /* Assets.xcassets */,
+				797E962A1DE0F78600077C6C /* Info.plist */,
+			);
+			path = "watchOS-Demo";
+			sourceTree = "<group>";
+		};
+		797E96331DE0F78600077C6C /* watchOS-Demo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				797E96341DE0F78600077C6C /* InterfaceController.h */,
+				797E96351DE0F78600077C6C /* InterfaceController.m */,
+				797E96371DE0F78600077C6C /* ExtensionDelegate.h */,
+				797E96381DE0F78600077C6C /* ExtensionDelegate.m */,
+				797E963A1DE0F78600077C6C /* Assets.xcassets */,
+				797E963C1DE0F78600077C6C /* Info.plist */,
+			);
+			path = "watchOS-Demo Extension";
+			sourceTree = "<group>";
+		};
 		7980E2551DD8C80B005A8F31 = {
 			isa = PBXGroup;
 			children = (
 				7980E2611DD8C80B005A8F31 /* FontAwesome-BBExtensions */,
 				7980E2751DD8C9FD005A8F31 /* iOS-Demo */,
 				79BFA8301DE0C0300053AA91 /* macOS-Demo */,
+				797E96241DE0F78600077C6C /* watchOS-Demo */,
+				797E96331DE0F78600077C6C /* watchOS-Demo Extension */,
 				7980E2601DD8C80B005A8F31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +261,8 @@
 				79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */,
 				79BFA82F1DE0C02F0053AA91 /* macOS-Demo.app */,
 				797E960D1DE0F5A400077C6C /* FontAwesome_BBExtensions.framework */,
+				797E96231DE0F78600077C6C /* watchOS-Demo.app */,
+				797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,6 +416,40 @@
 			productReference = 797E960D1DE0F5A400077C6C /* FontAwesome_BBExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		797E96221DE0F78600077C6C /* watchOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797E96441DE0F78600077C6C /* Build configuration list for PBXNativeTarget "watchOS-Demo" */;
+			buildPhases = (
+				797E96211DE0F78600077C6C /* Resources */,
+				797E96431DE0F78600077C6C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797E96321DE0F78600077C6C /* PBXTargetDependency */,
+			);
+			name = "watchOS-Demo";
+			productName = "watchOS-Demo";
+			productReference = 797E96231DE0F78600077C6C /* watchOS-Demo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		797E962E1DE0F78600077C6C /* watchOS-Demo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797E96401DE0F78600077C6C /* Build configuration list for PBXNativeTarget "watchOS-Demo Extension" */;
+			buildPhases = (
+				797E962B1DE0F78600077C6C /* Sources */,
+				797E962C1DE0F78600077C6C /* Frameworks */,
+				797E962D1DE0F78600077C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchOS-Demo Extension";
+			productName = "watchOS-Demo Extension";
+			productReference = 797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7980E2671DD8C80B005A8F31 /* Build configuration list for PBXNativeTarget "iOS-FontAwesome-BBExtensions" */;
@@ -350,11 +475,13 @@
 				7980E2701DD8C9FD005A8F31 /* Sources */,
 				7980E2711DD8C9FD005A8F31 /* Frameworks */,
 				7980E2721DD8C9FD005A8F31 /* Resources */,
+				797E96471DE0F78600077C6C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */,
+				797E963E1DE0F78600077C6C /* PBXTargetDependency */,
 			);
 			name = "iOS-Demo";
 			productName = Demo;
@@ -412,6 +539,16 @@
 						DevelopmentTeam = C6AZ27TEW2;
 						ProvisioningStyle = Automatic;
 					};
+					797E96221DE0F78600077C6C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C6AZ27TEW2;
+						ProvisioningStyle = Automatic;
+					};
+					797E962E1DE0F78600077C6C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C6AZ27TEW2;
+						ProvisioningStyle = Automatic;
+					};
 					7980E25E1DD8C80B005A8F31 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = C6AZ27TEW2;
@@ -452,6 +589,8 @@
 				797E960C1DE0F5A400077C6C /* watchOS-FontAwesome-BBExtensions */,
 				7980E2731DD8C9FD005A8F31 /* iOS-Demo */,
 				79BFA82E1DE0C02F0053AA91 /* macOS-Demo */,
+				797E96221DE0F78600077C6C /* watchOS-Demo */,
+				797E962E1DE0F78600077C6C /* watchOS-Demo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -461,6 +600,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96211DE0F78600077C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E96291DE0F78600077C6C /* Assets.xcassets in Resources */,
+				797E96271DE0F78600077C6C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E962D1DE0F78600077C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E963B1DE0F78600077C6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +670,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		797E962B1DE0F78600077C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E96391DE0F78600077C6C /* ExtensionDelegate.m in Sources */,
+				797E96361DE0F78600077C6C /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7980E25A1DD8C80B005A8F31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,6 +724,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		797E96321DE0F78600077C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797E962E1DE0F78600077C6C /* watchOS-Demo Extension */;
+			targetProxy = 797E96311DE0F78600077C6C /* PBXContainerItemProxy */;
+		};
+		797E963E1DE0F78600077C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797E96221DE0F78600077C6C /* watchOS-Demo */;
+			targetProxy = 797E963D1DE0F78600077C6C /* PBXContainerItemProxy */;
+		};
 		7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */;
@@ -572,6 +747,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		797E96251DE0F78600077C6C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797E96261DE0F78600077C6C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		7980E27F1DD8C9FD005A8F31 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -640,6 +823,70 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
 				PRODUCT_NAME = FontAwesome_BBExtensions;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		797E96411DE0F78600077C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				INFOPLIST_FILE = "watchOS-Demo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		797E96421DE0F78600077C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				INFOPLIST_FILE = "watchOS-Demo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		797E96451DE0F78600077C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				IBSC_MODULE = watchOS_Demo_Extension;
+				INFOPLIST_FILE = "watchOS-Demo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		797E96461DE0F78600077C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				IBSC_MODULE = watchOS_Demo_Extension;
+				INFOPLIST_FILE = "watchOS-Demo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -893,6 +1140,22 @@
 			buildConfigurations = (
 				797E96121DE0F5A400077C6C /* Debug */,
 				797E96131DE0F5A400077C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		797E96401DE0F78600077C6C /* Build configuration list for PBXNativeTarget "watchOS-Demo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797E96411DE0F78600077C6C /* Debug */,
+				797E96421DE0F78600077C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		797E96441DE0F78600077C6C /* Build configuration list for PBXNativeTarget "watchOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797E96451DE0F78600077C6C /* Debug */,
+				797E96461DE0F78600077C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
