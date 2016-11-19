@@ -106,6 +106,10 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconBug = @"fa-bug",
     .iconBuilding = @"fa-building",
     .iconBuildingO = @"fa-building-o",
+    .iconBullhorn = @"fa-bullhorn",
+    .iconBullseye = @"fa-bullseye",
+    .iconBus = @"fa-bus",
+    .iconBuySellAds = @"fa-buysellads",
     
     .iconPlus = @"fa-plus",
     .iconQuestionCircleO = @"fa-question-circle-o",
@@ -204,6 +208,10 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconBug = @"\uf188",
     .iconBuilding = @"\uf1ad",
     .iconBuildingO = @"\uf0f7",
+    .iconBullhorn = @"\uf0a1",
+    .iconBullseye = @"\uf140",
+    .iconBus = @"\uf207",
+    .iconBuySellAds = @"\uf20d",
     
     .iconPlus = @"\uf067",
     .iconQuestionCircleO = @"\uf29c",

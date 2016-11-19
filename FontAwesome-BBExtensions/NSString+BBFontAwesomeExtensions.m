@@ -252,6 +252,14 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeIdentifier.iconBuilding;
         case BBFontAwesomeIconBuildingO:
             return BBFontAwesomeIdentifier.iconBuildingO;
+        case BBFontAwesomeIconBullhorn:
+            return BBFontAwesomeIdentifier.iconBullhorn;
+        case BBFontAwesomeIconBullseye:
+            return BBFontAwesomeIdentifier.iconBullseye;
+        case BBFontAwesomeIconBus:
+            return BBFontAwesomeIdentifier.iconBus;
+        case BBFontAwesomeIconBuySellAds:
+            return BBFontAwesomeIdentifier.iconBuySellAds;
             
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeIdentifier.iconPlus;
@@ -447,6 +455,14 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeString.iconBuilding;
         case BBFontAwesomeIconBuildingO:
             return BBFontAwesomeString.iconBuildingO;
+        case BBFontAwesomeIconBullhorn:
+            return BBFontAwesomeString.iconBullhorn;
+        case BBFontAwesomeIconBullseye:
+            return BBFontAwesomeString.iconBullseye;
+        case BBFontAwesomeIconBus:
+            return BBFontAwesomeString.iconBus;
+        case BBFontAwesomeIconBuySellAds:
+            return BBFontAwesomeString.iconBuySellAds;
             
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeString.iconPlus;
