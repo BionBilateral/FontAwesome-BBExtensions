@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		797E95F11DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+BBFontAwesomeExtensions.h"; path = "macOS/NSImage+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
 		797E95F21DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+BBFontAwesomeExtensions.m"; path = "macOS/NSImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		797E95F71DE0D20800077C6C /* FontAwesome-BBExtensions-Info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontAwesome-BBExtensions-Info.h"; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -212,6 +213,7 @@
 		79BFA8171DE0BABD0053AA91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				797E95F71DE0D20800077C6C /* FontAwesome-BBExtensions-Info.h */,
 				79BFA8251DE0BDBF0053AA91 /* iOS-Info.plist */,
 				79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */,
 			);
@@ -687,6 +689,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/macOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/FontAwesome-BBExtensions/FontAwesome-BBExtensions-Info.h";
+				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -709,6 +713,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/macOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/FontAwesome-BBExtensions/FontAwesome-BBExtensions-Info.h";
+				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
