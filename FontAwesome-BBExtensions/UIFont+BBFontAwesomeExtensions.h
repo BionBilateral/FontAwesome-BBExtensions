@@ -27,7 +27,7 @@ extern NSString *const BBFontAwesomeFontNameDefault;
 /**
  Set and get the Font Awesome font name. Use this to set a name other than "FontAwesome" if necessary.
  */
-@property (copy,class,nonatomic,setter=BB_setFontAwesomeFontName:) NSString *BB_fontAwesomeFontName;
+@property (copy,class,nonatomic,nullable,setter=BB_setFontAwesomeFontName:) NSString *BB_fontAwesomeFontName;
 
 /**
  Returns the Font Awesome font at the provided size.

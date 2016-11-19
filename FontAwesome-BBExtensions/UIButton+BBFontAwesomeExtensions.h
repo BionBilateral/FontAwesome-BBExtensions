@@ -16,12 +16,14 @@
 #import <UIKit/UIKit.h>
 #import "BBFontAwesomeConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIButton (BBFontAwesomeExtensions)
 
 /**
  Calls through to BB_setFontAwesomeIdentifier:forState:, passing BB_fontAwesomeIdentifier and UIControlStateNormal.
  */
-@property (copy,nonatomic,setter=BB_setFontAwesomeIdentifier:) NSString *BB_fontAwesomeIdentifier;
+@property (copy,nonatomic,nullable,setter=BB_setFontAwesomeIdentifier:) NSString *BB_fontAwesomeIdentifier;
 /**
  Set and get the size at which to draw the associated Font Awesome image. The default is CGSizeMake(24,24).
  */
@@ -38,14 +40,14 @@
  @param state The control state
  @return The Font Awesome identifier
  */
-- (NSString *)BB_fontAwesomeIdentifierForState:(UIControlState)state;
+- (nullable NSString *)BB_fontAwesomeIdentifierForState:(UIControlState)state;
 /**
  Sets the Font Awesome identifier for the provided control state. Passing nil, clears the Font Awesome identifier for that control state.
  
  @param fontAwesomeIdentifier The Font Awesome identifier
  @param state The control state
  */
-- (void)BB_setFontAwesomeIdentifier:(NSString *)fontAwesomeIdentifier forState:(UIControlState)state;
+- (void)BB_setFontAwesomeIdentifier:(nullable NSString *)fontAwesomeIdentifier forState:(UIControlState)state;
 
 /**
  Returns the Font Awesome icon set for the provided control state.
@@ -63,3 +65,5 @@
 - (void)BB_setFontAwesomeIcon:(BBFontAwesomeIcon)icon forState:(UIControlState)state;
 
 @end
+
+NS_ASSUME_NONNULL_END
