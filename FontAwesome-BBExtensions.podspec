@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FontAwesome-BBExtensions"
-  s.version      = "0.0.16"
+  s.version      = "0.0.17"
   s.summary      = "Categories on NSString, UIFont, and UIImage to make creation of FontAwesome icons easier."
   s.description  = <<-DESC
   Categories to Foundation and UIKit classes to make it easier to create UIImage instances from FontAwesome Unicode characters. The naming scheme mirrors the class names used on the FontAwesome cheat sheet page at http://fontawesome.io/cheatsheet/.
@@ -17,7 +17,10 @@ Pod::Spec.new do |s|
   s.ios.exclude_files = "FontAwesome-BBExtensions/macOS"
   s.osx.exclude_files = "FontAwesome-BBExtensions/iOS"
   s.watchos.exclude_files = "FontAwesome-BBExtensions/iOS/UIButton*.{h,m}", "FontAwesome-BBExtensions/macOS"
-  s.frameworks = "Foundation", "UIKit"
+  s.frameworks = "Foundation"
+  s.ios.frameworks = "UIKit"
+  s.watchos.frameworks = "UIKit"
+  s.osx.frameworks = "AppKit"
   s.requires_arc = true
   s.header_dir = "FontAwesome_BBExtensions"
 end
