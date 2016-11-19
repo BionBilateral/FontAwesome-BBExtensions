@@ -4,4 +4,4 @@
 [![Platform](http://img.shields.io/cocoapods/p/FontAwesome-BBExtensions.svg)]()
 [![License](http://img.shields.io/cocoapods/l/FontAwesome-BBExtensions.svg)](https://github.com/BionBilateral/FontAwesome-BBExtensions/blob/master/license.txt)
 
-iOS/watchOS extensions to make dealing with Font Awesome easier.
+iOS/macOS/watchOS extensions to make dealing with Font Awesome easier.
