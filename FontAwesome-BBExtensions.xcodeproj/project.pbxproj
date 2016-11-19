@@ -105,18 +105,8 @@
 		7980E2611DD8C80B005A8F31 /* FontAwesome-BBExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */,
-				7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */,
-				7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */,
-				7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */,
-				7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */,
-				7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */,
-				7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */,
-				7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */,
-				7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */,
-				79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */,
-				79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */,
-				7980E2631DD8C80B005A8F31 /* Info.plist */,
+				79BFA8161DE0BAB80053AA91 /* Source */,
+				79BFA8171DE0BABD0053AA91 /* Supporting Files */,
 			);
 			path = "FontAwesome-BBExtensions";
 			sourceTree = "<group>";
@@ -142,6 +132,32 @@
 			children = (
 				7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */,
 				7980E2771DD8C9FD005A8F31 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79BFA8161DE0BAB80053AA91 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */,
+				7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */,
+				7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */,
+				7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */,
+				7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */,
+				7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */,
+				7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */,
+				7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */,
+				7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */,
+				79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */,
+				79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		79BFA8171DE0BABD0053AA91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7980E2631DD8C80B005A8F31 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
