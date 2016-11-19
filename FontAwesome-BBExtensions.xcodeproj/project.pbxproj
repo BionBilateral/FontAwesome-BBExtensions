@@ -26,6 +26,10 @@
 		7980E2991DD8DC91005A8F31 /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */; };
 		79BFA8101DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79BFA8111DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */; };
+		79BFA8271DE0BDC40053AA91 /* macOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */; };
+		79BFA8281DE0BE220053AA91 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BFA8291DE0BE220053AA91 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BFA82A1DE0BE220053AA91 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +45,10 @@
 /* Begin PBXFileReference section */
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
-		7980E2631DD8C80B005A8F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
 		7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
 		7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
-		7980E2741DD8C9FD005A8F31 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7980E2741DD8C9FD005A8F31 /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2771DD8C9FD005A8F31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7980E2791DD8C9FD005A8F31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7980E27A1DD8C9FD005A8F31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,13 +59,16 @@
 		7980E2851DD8C9FD005A8F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7980E2871DD8C9FD005A8F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
-		7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
-		7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
-		7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+BBFontAwesomeExtensions.h"; path = "iOS/UIFont+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
+		7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+BBFontAwesomeExtensions.m"; path = "iOS/UIFont+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BBFontAwesomeExtensions.h"; path = "iOS/UIImage+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
+		7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BBFontAwesomeExtensions.m"; path = "iOS/UIImage+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
 		7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFontAwesomeConstants.m; sourceTree = "<group>"; };
-		79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
-		79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+BBFontAwesomeExtensions.h"; path = "iOS/UIButton+BBFontAwesomeExtensions.h"; sourceTree = "<group>"; };
+		79BFA80F1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BBFontAwesomeExtensions.m"; path = "iOS/UIButton+BBFontAwesomeExtensions.m"; sourceTree = "<group>"; };
+		79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BFA8251DE0BDBF0053AA91 /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7980E2991DD8DC91005A8F31 /* FontAwesome_BBExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BFA8191DE0BD190053AA91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */,
-				7980E2741DD8C9FD005A8F31 /* Demo.app */,
+				7980E2741DD8C9FD005A8F31 /* iOS-Demo.app */,
+				79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +171,8 @@
 		79BFA8171DE0BABD0053AA91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7980E2631DD8C80B005A8F31 /* Info.plist */,
+				79BFA8251DE0BDBF0053AA91 /* iOS-Info.plist */,
+				79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,12 +193,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BFA81A1DE0BD190053AA91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BFA82A1DE0BE220053AA91 /* NSString+BBFontAwesomeExtensions.h in Headers */,
+				79BFA8281DE0BE220053AA91 /* FontAwesome_BBExtensions.h in Headers */,
+				79BFA8291DE0BE220053AA91 /* BBFontAwesomeConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7980E25E1DD8C80B005A8F31 /* FontAwesome-BBExtensions */ = {
+		7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7980E2671DD8C80B005A8F31 /* Build configuration list for PBXNativeTarget "FontAwesome-BBExtensions" */;
+			buildConfigurationList = 7980E2671DD8C80B005A8F31 /* Build configuration list for PBXNativeTarget "iOS-FontAwesome-BBExtensions" */;
 			buildPhases = (
 				7980E25A1DD8C80B005A8F31 /* Sources */,
 				7980E25B1DD8C80B005A8F31 /* Frameworks */,
@@ -194,14 +219,14 @@
 			);
 			dependencies = (
 			);
-			name = "FontAwesome-BBExtensions";
+			name = "iOS-FontAwesome-BBExtensions";
 			productName = "FontAwesome-BBExtensions";
 			productReference = 7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7980E2731DD8C9FD005A8F31 /* Demo */ = {
+		7980E2731DD8C9FD005A8F31 /* iOS-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7980E2881DD8C9FD005A8F31 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = 7980E2881DD8C9FD005A8F31 /* Build configuration list for PBXNativeTarget "iOS-Demo" */;
 			buildPhases = (
 				7980E2701DD8C9FD005A8F31 /* Sources */,
 				7980E2711DD8C9FD005A8F31 /* Frameworks */,
@@ -212,10 +237,28 @@
 			dependencies = (
 				7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */,
 			);
-			name = Demo;
+			name = "iOS-Demo";
 			productName = Demo;
-			productReference = 7980E2741DD8C9FD005A8F31 /* Demo.app */;
+			productReference = 7980E2741DD8C9FD005A8F31 /* iOS-Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		79BFA81C1DE0BD190053AA91 /* macOS-FontAwesome-BBExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BFA8221DE0BD190053AA91 /* Build configuration list for PBXNativeTarget "macOS-FontAwesome-BBExtensions" */;
+			buildPhases = (
+				79BFA8181DE0BD190053AA91 /* Sources */,
+				79BFA8191DE0BD190053AA91 /* Frameworks */,
+				79BFA81A1DE0BD190053AA91 /* Headers */,
+				79BFA81B1DE0BD190053AA91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS-FontAwesome-BBExtensions";
+			productName = "FontAwesome-BBExtensions-macOS";
+			productReference = 79BFA81D1DE0BD190053AA91 /* FontAwesome_BBExtensions.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -237,6 +280,11 @@
 						DevelopmentTeam = C6AZ27TEW2;
 						ProvisioningStyle = Automatic;
 					};
+					79BFA81C1DE0BD190053AA91 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C6AZ27TEW2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7980E2591DD8C80B005A8F31 /* Build configuration list for PBXProject "FontAwesome-BBExtensions" */;
@@ -252,8 +300,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7980E25E1DD8C80B005A8F31 /* FontAwesome-BBExtensions */,
-				7980E2731DD8C9FD005A8F31 /* Demo */,
+				7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */,
+				79BFA81C1DE0BD190053AA91 /* macOS-FontAwesome-BBExtensions */,
+				7980E2731DD8C9FD005A8F31 /* iOS-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BFA8271DE0BDC40053AA91 /* macOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +324,13 @@
 				7980E2831DD8C9FD005A8F31 /* Assets.xcassets in Resources */,
 				7980E2811DD8C9FD005A8F31 /* Main.storyboard in Resources */,
 				7980E28E1DD8CBDB005A8F31 /* FontAwesome.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BFA81B1DE0BD190053AA91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +359,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79BFA8181DE0BD190053AA91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7980E25E1DD8C80B005A8F31 /* FontAwesome-BBExtensions */;
+			target = 7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */;
 			targetProxy = 7980E28B1DD8CB79005A8F31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -437,7 +501,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "FontAwesome-BBExtensions/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
@@ -455,7 +519,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "FontAwesome-BBExtensions/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
@@ -488,6 +552,50 @@
 			};
 			name = Release;
 		};
+		79BFA8231DE0BD190053AA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
+				PRODUCT_NAME = FontAwesome_BBExtensions;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79BFA8241DE0BD190053AA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
+				PRODUCT_NAME = FontAwesome_BBExtensions;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7980E2671DD8C80B005A8F31 /* Build configuration list for PBXNativeTarget "FontAwesome-BBExtensions" */ = {
+		7980E2671DD8C80B005A8F31 /* Build configuration list for PBXNativeTarget "iOS-FontAwesome-BBExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7980E2681DD8C80B005A8F31 /* Debug */,
@@ -509,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7980E2881DD8C9FD005A8F31 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		7980E2881DD8C9FD005A8F31 /* Build configuration list for PBXNativeTarget "iOS-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7980E2891DD8C9FD005A8F31 /* Debug */,
@@ -517,6 +625,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		79BFA8221DE0BD190053AA91 /* Build configuration list for PBXNativeTarget "macOS-FontAwesome-BBExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BFA8231DE0BD190053AA91 /* Debug */,
+				79BFA8241DE0BD190053AA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
