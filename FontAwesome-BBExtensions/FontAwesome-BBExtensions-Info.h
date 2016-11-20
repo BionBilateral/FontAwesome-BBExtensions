@@ -16,6 +16,6 @@
 #ifndef FontAwesome_BBExtensions_Info_h
 #define FontAwesome_BBExtensions_Info_h
 
-#define BUNDLE_SHORT_VERSION_STRING 0.0.19
+#define BUNDLE_SHORT_VERSION_STRING 0.0.20
 
 #endif /* FontAwesome_BBExtensions_Info_h */
