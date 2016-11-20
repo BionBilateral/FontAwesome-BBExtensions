@@ -49,6 +49,7 @@
 		797E967A1DE234FB00077C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E96791DE234FB00077C6C /* Assets.xcassets */; };
 		797E967F1DE2352500077C6C /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */; };
 		797E96821DE2379300077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
+		797E96831DE23B8D00077C6C /* UIButton+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -469,6 +470,7 @@
 				797E96611DE2347200077C6C /* UIFont+BBFontAwesomeExtensions.h in Headers */,
 				797E96601DE2347200077C6C /* NSString+BBFontAwesomeExtensions.h in Headers */,
 				797E965E1DE2347200077C6C /* FontAwesome_BBExtensions.h in Headers */,
+				797E96831DE23B8D00077C6C /* UIButton+BBFontAwesomeExtensions.h in Headers */,
 				797E96621DE2347200077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				797E965F1DE2347200077C6C /* BBFontAwesomeConstants.h in Headers */,
 			);
