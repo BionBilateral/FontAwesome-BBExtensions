@@ -16,13 +16,8 @@
 #import "UIImage+BBFontAwesomeExtensions.h"
 #import "UIFont+BBFontAwesomeExtensions.h"
 #import "NSString+BBFontAwesomeExtensions.h"
-
-static CGRect kBBFontAwesomeCGRectCenterInRect(CGRect rect_to_center, CGRect in_rect) {
-    return CGRectMake(floor(CGRectGetMinX(in_rect) + (CGRectGetWidth(in_rect) * 0.5) - (CGRectGetWidth(rect_to_center) * 0.5)),
-                      floor(CGRectGetMinY(in_rect) + (CGRectGetHeight(in_rect) * 0.5) - (CGRectGetHeight(rect_to_center) * 0.5)),
-                      CGRectGetWidth(rect_to_center),
-                      CGRectGetHeight(rect_to_center));
-}
+#import "BBFontAwesomeFunctions.h"
+#import "BBFontAwesomeMacros.h"
 
 @implementation UIImage (BBFontAwesomeExtensions)
 
@@ -41,27 +36,11 @@ static CGRect kBBFontAwesomeCGRectCenterInRect(CGRect rect_to_center, CGRect in_
     }
     
     NSString *text = [NSString BB_fontAwesomeStringForIcon:icon];
-    CGFloat pointSize = MIN(size.width, size.height);
-    CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
-    
-    while (textSize.width <= size.width &&
-           textSize.height <= size.height) {
-        
-        pointSize++;
-        textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
-    }
-    
-    while (textSize.width > size.width ||
-           textSize.height > size.height) {
-        
-        pointSize--;
-        textSize = [text sizeWithAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize]}];
-    }
-    
-    CGRect rect = kBBFontAwesomeCGRectCenterInRect(CGRectMake(0, 0, textSize.width, textSize.height), CGRectMake(0, 0, size.width, size.height));
+    CGRect rect;
+    CGFloat pointSize = BBFontAwesomePointSizeAndRectForIconAndSize(text, size, &rect);
     
     if (foregroundColor == nil) {
-        foregroundColor = [UIColor blackColor];
+        foregroundColor = BBFontAwesomeDefaultForegroundColor();
     }
     
     [text drawInRect:rect withAttributes:@{NSFontAttributeName: [UIFont BB_fontAwesomeFontOfSize:pointSize], NSForegroundColorAttributeName: foregroundColor}];

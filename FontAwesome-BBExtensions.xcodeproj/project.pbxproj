@@ -50,6 +50,19 @@
 		797E967F1DE2352500077C6C /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */; };
 		797E96821DE2379300077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
 		797E96831DE23B8D00077C6C /* UIButton+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BFA80E1DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96851DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96861DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96871DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96881DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E968A1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */; };
+		797E968B1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */; };
+		797E968C1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */; };
+		797E968D1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */; };
+		797E968E1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */; };
+		797E96901DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96911DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96921DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96931DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +195,9 @@
 		797E96771DE234FB00077C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797E96791DE234FB00077C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797E967B1DE234FB00077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeFunctions.h; sourceTree = "<group>"; };
+		797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFontAwesomeFunctions.m; sourceTree = "<group>"; };
+		797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeMacros.h; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -399,6 +415,9 @@
 				7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */,
 				7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */,
 				7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */,
+				797E968F1DE243A000077C6C /* BBFontAwesomeMacros.h */,
+				797E96841DE23CA700077C6C /* BBFontAwesomeFunctions.h */,
+				797E96891DE23CD600077C6C /* BBFontAwesomeFunctions.m */,
 				7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */,
 				7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */,
 				7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */,
@@ -460,6 +479,8 @@
 				797E96161DE0F70100077C6C /* FontAwesome_BBExtensions.h in Headers */,
 				797E961A1DE0F70100077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				797E96171DE0F70100077C6C /* BBFontAwesomeConstants.h in Headers */,
+				797E96881DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */,
+				797E96931DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,8 +489,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				797E96611DE2347200077C6C /* UIFont+BBFontAwesomeExtensions.h in Headers */,
+				797E96871DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */,
 				797E96601DE2347200077C6C /* NSString+BBFontAwesomeExtensions.h in Headers */,
 				797E965E1DE2347200077C6C /* FontAwesome_BBExtensions.h in Headers */,
+				797E96921DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */,
 				797E96831DE23B8D00077C6C /* UIButton+BBFontAwesomeExtensions.h in Headers */,
 				797E96621DE2347200077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				797E965F1DE2347200077C6C /* BBFontAwesomeConstants.h in Headers */,
@@ -481,8 +504,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7980E2911DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h in Headers */,
+				797E96851DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */,
 				7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */,
 				7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */,
+				797E96901DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */,
 				79BFA8101DDDEBA00053AA91 /* UIButton+BBFontAwesomeExtensions.h in Headers */,
 				7980E2951DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */,
@@ -498,6 +523,8 @@
 				79BFA8281DE0BE220053AA91 /* FontAwesome_BBExtensions.h in Headers */,
 				79BFA8451DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.h in Headers */,
 				79BFA8291DE0BE220053AA91 /* BBFontAwesomeConstants.h in Headers */,
+				797E96861DE23CA700077C6C /* BBFontAwesomeFunctions.h in Headers */,
+				797E96911DE243A000077C6C /* BBFontAwesomeMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,6 +868,7 @@
 				797E961C1DE0F71800077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */,
 				797E961D1DE0F71800077C6C /* UIFont+BBFontAwesomeExtensions.m in Sources */,
 				797E961B1DE0F71800077C6C /* BBFontAwesomeConstants.m in Sources */,
+				797E968D1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +876,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E968E1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */,
 				797E96391DE0F78600077C6C /* ExtensionDelegate.m in Sources */,
 				797E96361DE0F78600077C6C /* InterfaceController.m in Sources */,
 				797E964D1DE229D100077C6C /* TableRowController.m in Sources */,
@@ -862,6 +891,7 @@
 				797E96641DE2347D00077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */,
 				797E96651DE2347D00077C6C /* UIFont+BBFontAwesomeExtensions.m in Sources */,
 				797E96631DE2347D00077C6C /* BBFontAwesomeConstants.m in Sources */,
+				797E968C1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +909,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E968A1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */,
 				7980E2981DD8CFBC005A8F31 /* BBFontAwesomeConstants.m in Sources */,
 				7980E2961DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m in Sources */,
 				7980E2921DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m in Sources */,
@@ -905,6 +936,7 @@
 				79BFA8461DE0C1590053AA91 /* NSFont+BBFontAwesomeExtensions.m in Sources */,
 				797E95F51DE0C91200077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */,
 				797E95F41DE0C22F00077C6C /* NSImage+BBFontAwesomeExtensions.m in Sources */,
+				797E968B1DE23CD600077C6C /* BBFontAwesomeFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

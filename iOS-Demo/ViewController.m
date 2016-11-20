@@ -75,7 +75,7 @@ static CGSize const kItemSize = {.width=64, .height=64};
 - (void)setIcon:(BBFontAwesomeIcon)icon {
     _icon = icon;
     
-    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:self.icon foregroundColor:self.tintColor size:kItemSize]];
+    [self.imageView setImage:[UIImage BB_fontAwesomeImageWithIcon:self.icon size:kItemSize]];
 }
 
 @end
