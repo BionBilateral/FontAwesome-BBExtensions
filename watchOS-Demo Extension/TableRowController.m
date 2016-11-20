@@ -21,7 +21,7 @@
 - (void)setIcon:(BBFontAwesomeIcon)icon {
     _icon = icon;
     
-    [self.interfaceImage setImage:[UIImage BB_fontAwesomeImageWithIcon:_icon foregroundColor:[UIColor cyanColor] size:CGSizeMake(32, 32)]];
+    [self.interfaceImage setImage:[UIImage BB_fontAwesomeImageWithIcon:_icon foregroundColor:[UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0] size:CGSizeMake(32, 32)]];
 }
 
 @end

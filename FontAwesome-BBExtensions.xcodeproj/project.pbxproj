@@ -33,6 +33,22 @@
 		797E964D1DE229D100077C6C /* TableRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E964C1DE229D100077C6C /* TableRowController.m */; };
 		797E964E1DE2304400077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
 		797E964F1DE2307600077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
+		797E965E1DE2347200077C6C /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E965F1DE2347200077C6C /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96601DE2347200077C6C /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96611DE2347200077C6C /* UIFont+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E28F1DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96621DE2347200077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2931DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		797E96631DE2347D00077C6C /* BBFontAwesomeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2971DD8CFBC005A8F31 /* BBFontAwesomeConstants.m */; };
+		797E96641DE2347D00077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E26D1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.m */; };
+		797E96651DE2347D00077C6C /* UIFont+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2901DD8CC56005A8F31 /* UIFont+BBFontAwesomeExtensions.m */; };
+		797E96661DE2347D00077C6C /* UIImage+BBFontAwesomeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2941DD8CC66005A8F31 /* UIImage+BBFontAwesomeExtensions.m */; };
+		797E966F1DE234FB00077C6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E966E1DE234FB00077C6C /* main.m */; };
+		797E96721DE234FB00077C6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96711DE234FB00077C6C /* AppDelegate.m */; };
+		797E96751DE234FB00077C6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96741DE234FB00077C6C /* ViewController.m */; };
+		797E96781DE234FB00077C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797E96761DE234FB00077C6C /* Main.storyboard */; };
+		797E967A1DE234FB00077C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E96791DE234FB00077C6C /* Assets.xcassets */; };
+		797E967F1DE2352500077C6C /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */; };
+		797E96821DE2379300077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,6 +101,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 797E960C1DE0F5A400077C6C;
 			remoteInfo = "watchOS-FontAwesome-BBExtensions";
+		};
+		797E96801DE2352E00077C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797E96541DE2339C00077C6C;
+			remoteInfo = "tvOS-FontAwesome-BBExtensions";
 		};
 		7980E28B1DD8CB79005A8F31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -147,6 +170,17 @@
 		797E963C1DE0F78600077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797E964B1DE229D100077C6C /* TableRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowController.h; sourceTree = "<group>"; };
 		797E964C1DE229D100077C6C /* TableRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowController.m; sourceTree = "<group>"; };
+		797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797E965D1DE233E200077C6C /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		797E966B1DE234FB00077C6C /* tvOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797E966E1DE234FB00077C6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		797E96701DE234FB00077C6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		797E96711DE234FB00077C6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		797E96731DE234FB00077C6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		797E96741DE234FB00077C6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		797E96771DE234FB00077C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		797E96791DE234FB00077C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797E967B1DE234FB00077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -196,6 +230,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				797E96481DE2298800077C6C /* FontAwesome_BBExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96511DE2339C00077C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96681DE234FB00077C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E967F1DE2352500077C6C /* FontAwesome_BBExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +306,36 @@
 			path = "watchOS-Demo Extension";
 			sourceTree = "<group>";
 		};
+		797E966C1DE234FB00077C6C /* tvOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				797E96701DE234FB00077C6C /* AppDelegate.h */,
+				797E96711DE234FB00077C6C /* AppDelegate.m */,
+				797E96731DE234FB00077C6C /* ViewController.h */,
+				797E96741DE234FB00077C6C /* ViewController.m */,
+				797E96761DE234FB00077C6C /* Main.storyboard */,
+				797E96791DE234FB00077C6C /* Assets.xcassets */,
+				797E967B1DE234FB00077C6C /* Info.plist */,
+				797E966D1DE234FB00077C6C /* Supporting Files */,
+			);
+			path = "tvOS-Demo";
+			sourceTree = "<group>";
+		};
+		797E966D1DE234FB00077C6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				797E966E1DE234FB00077C6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7980E2551DD8C80B005A8F31 = {
 			isa = PBXGroup;
 			children = (
 				7980E2611DD8C80B005A8F31 /* FontAwesome-BBExtensions */,
 				7980E2751DD8C9FD005A8F31 /* iOS-Demo */,
 				79BFA8301DE0C0300053AA91 /* macOS-Demo */,
+				797E966C1DE234FB00077C6C /* tvOS-Demo */,
 				797E96241DE0F78600077C6C /* watchOS-Demo */,
 				797E96331DE0F78600077C6C /* watchOS-Demo Extension */,
 				7980E2601DD8C80B005A8F31 /* Products */,
@@ -279,6 +352,8 @@
 				797E960D1DE0F5A400077C6C /* FontAwesome_BBExtensions.framework */,
 				797E96231DE0F78600077C6C /* watchOS-Demo.app */,
 				797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */,
+				797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */,
+				797E966B1DE234FB00077C6C /* tvOS-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,6 +420,7 @@
 				797E95F71DE0D20800077C6C /* FontAwesome-BBExtensions-Info.h */,
 				79BFA8251DE0BDBF0053AA91 /* iOS-Info.plist */,
 				79BFA8261DE0BDC40053AA91 /* macOS-Info.plist */,
+				797E965D1DE233E200077C6C /* tvOS-Info.plist */,
 				797E96151DE0F6CB00077C6C /* watchOS-Info.plist */,
 			);
 			name = "Supporting Files";
@@ -383,6 +459,18 @@
 				797E96161DE0F70100077C6C /* FontAwesome_BBExtensions.h in Headers */,
 				797E961A1DE0F70100077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */,
 				797E96171DE0F70100077C6C /* BBFontAwesomeConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96521DE2339C00077C6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E96611DE2347200077C6C /* UIFont+BBFontAwesomeExtensions.h in Headers */,
+				797E96601DE2347200077C6C /* NSString+BBFontAwesomeExtensions.h in Headers */,
+				797E965E1DE2347200077C6C /* FontAwesome_BBExtensions.h in Headers */,
+				797E96621DE2347200077C6C /* UIImage+BBFontAwesomeExtensions.h in Headers */,
+				797E965F1DE2347200077C6C /* BBFontAwesomeConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +554,42 @@
 			productName = "watchOS-Demo Extension";
 			productReference = 797E962F1DE0F78600077C6C /* watchOS-Demo Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		797E96541DE2339C00077C6C /* tvOS-FontAwesome-BBExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797E965A1DE2339D00077C6C /* Build configuration list for PBXNativeTarget "tvOS-FontAwesome-BBExtensions" */;
+			buildPhases = (
+				797E96501DE2339C00077C6C /* Sources */,
+				797E96511DE2339C00077C6C /* Frameworks */,
+				797E96521DE2339C00077C6C /* Headers */,
+				797E96531DE2339C00077C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS-FontAwesome-BBExtensions";
+			productName = "tvOS-FontAwesome-BBExtensions";
+			productReference = 797E96551DE2339D00077C6C /* FontAwesome_BBExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		797E966A1DE234FB00077C6C /* tvOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797E967C1DE234FB00077C6C /* Build configuration list for PBXNativeTarget "tvOS-Demo" */;
+			buildPhases = (
+				797E96671DE234FB00077C6C /* Sources */,
+				797E96681DE234FB00077C6C /* Frameworks */,
+				797E96691DE234FB00077C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797E96811DE2352E00077C6C /* PBXTargetDependency */,
+			);
+			name = "tvOS-Demo";
+			productName = "tvOS-Demo";
+			productReference = 797E966B1DE234FB00077C6C /* tvOS-Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 		7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */ = {
 			isa = PBXNativeTarget;
@@ -566,6 +690,16 @@
 						DevelopmentTeam = C6AZ27TEW2;
 						ProvisioningStyle = Automatic;
 					};
+					797E96541DE2339C00077C6C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C6AZ27TEW2;
+						ProvisioningStyle = Automatic;
+					};
+					797E966A1DE234FB00077C6C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C6AZ27TEW2;
+						ProvisioningStyle = Automatic;
+					};
 					7980E25E1DD8C80B005A8F31 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = C6AZ27TEW2;
@@ -603,9 +737,11 @@
 			targets = (
 				7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */,
 				79BFA81C1DE0BD190053AA91 /* macOS-FontAwesome-BBExtensions */,
+				797E96541DE2339C00077C6C /* tvOS-FontAwesome-BBExtensions */,
 				797E960C1DE0F5A400077C6C /* watchOS-FontAwesome-BBExtensions */,
 				7980E2731DD8C9FD005A8F31 /* iOS-Demo */,
 				79BFA82E1DE0C02F0053AA91 /* macOS-Demo */,
+				797E966A1DE234FB00077C6C /* tvOS-Demo */,
 				797E96221DE0F78600077C6C /* watchOS-Demo */,
 				797E962E1DE0F78600077C6C /* watchOS-Demo Extension */,
 			);
@@ -636,6 +772,23 @@
 			files = (
 				797E963B1DE0F78600077C6C /* Assets.xcassets in Resources */,
 				797E964F1DE2307600077C6C /* FontAwesome.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96531DE2339C00077C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96691DE234FB00077C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E967A1DE234FB00077C6C /* Assets.xcassets in Resources */,
+				797E96781DE234FB00077C6C /* Main.storyboard in Resources */,
+				797E96821DE2379300077C6C /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +852,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		797E96501DE2339C00077C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E96661DE2347D00077C6C /* UIImage+BBFontAwesomeExtensions.m in Sources */,
+				797E96641DE2347D00077C6C /* NSString+BBFontAwesomeExtensions.m in Sources */,
+				797E96651DE2347D00077C6C /* UIFont+BBFontAwesomeExtensions.m in Sources */,
+				797E96631DE2347D00077C6C /* BBFontAwesomeConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797E96671DE234FB00077C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797E96751DE234FB00077C6C /* ViewController.m in Sources */,
+				797E96721DE234FB00077C6C /* AppDelegate.m in Sources */,
+				797E966F1DE234FB00077C6C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7980E25A1DD8C80B005A8F31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -759,6 +933,11 @@
 			target = 797E960C1DE0F5A400077C6C /* watchOS-FontAwesome-BBExtensions */;
 			targetProxy = 797E96491DE2299000077C6C /* PBXContainerItemProxy */;
 		};
+		797E96811DE2352E00077C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797E96541DE2339C00077C6C /* tvOS-FontAwesome-BBExtensions */;
+			targetProxy = 797E96801DE2352E00077C6C /* PBXContainerItemProxy */;
+		};
 		7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7980E25E1DD8C80B005A8F31 /* iOS-FontAwesome-BBExtensions */;
@@ -778,6 +957,14 @@
 				797E96261DE0F78600077C6C /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		797E96761DE234FB00077C6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797E96771DE234FB00077C6C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		7980E27F1DD8C9FD005A8F31 /* Main.storyboard */ = {
@@ -916,6 +1103,84 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		797E965B1DE2339D00077C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/tvOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/FontAwesome-BBExtensions/FontAwesome-BBExtensions-Info.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
+				PRODUCT_NAME = FontAwesome_BBExtensions;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		797E965C1DE2339D00077C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/FontAwesome-BBExtensions/tvOS-Info.plist";
+				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/FontAwesome-BBExtensions/FontAwesome-BBExtensions-Info.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome-bbextensions";
+				PRODUCT_NAME = FontAwesome_BBExtensions;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		797E967D1DE234FB00077C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				INFOPLIST_FILE = "tvOS-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.tvOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		797E967E1DE234FB00077C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = C6AZ27TEW2;
+				INFOPLIST_FILE = "tvOS-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.tvOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -1181,6 +1446,22 @@
 			buildConfigurations = (
 				797E96451DE0F78600077C6C /* Debug */,
 				797E96461DE0F78600077C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		797E965A1DE2339D00077C6C /* Build configuration list for PBXNativeTarget "tvOS-FontAwesome-BBExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797E965B1DE2339D00077C6C /* Debug */,
+				797E965C1DE2339D00077C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		797E967C1DE234FB00077C6C /* Build configuration list for PBXNativeTarget "tvOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797E967D1DE234FB00077C6C /* Debug */,
+				797E967E1DE234FB00077C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
