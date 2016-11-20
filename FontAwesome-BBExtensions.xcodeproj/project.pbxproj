@@ -29,6 +29,10 @@
 		797E96391DE0F78600077C6C /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E96381DE0F78600077C6C /* ExtensionDelegate.m */; };
 		797E963B1DE0F78600077C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797E963A1DE0F78600077C6C /* Assets.xcassets */; };
 		797E963F1DE0F78600077C6C /* watchOS-Demo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 797E96231DE0F78600077C6C /* watchOS-Demo.app */; };
+		797E96481DE2298800077C6C /* FontAwesome_BBExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E960D1DE0F5A400077C6C /* FontAwesome_BBExtensions.framework */; };
+		797E964D1DE229D100077C6C /* TableRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E964C1DE229D100077C6C /* TableRowController.m */; };
+		797E964E1DE2304400077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
+		797E964F1DE2307600077C6C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7980E28D1DD8CBDB005A8F31 /* FontAwesome.ttf */; };
 		7980E2641DD8C80B005A8F31 /* FontAwesome_BBExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26B1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7980E26E1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980E26C1DD8C935005A8F31 /* NSString+BBFontAwesomeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +78,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 797E96221DE0F78600077C6C;
 			remoteInfo = "watchOS-Demo";
+		};
+		797E96491DE2299000077C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7980E2561DD8C80B005A8F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797E960C1DE0F5A400077C6C;
+			remoteInfo = "watchOS-FontAwesome-BBExtensions";
 		};
 		7980E28B1DD8CB79005A8F31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -134,6 +145,8 @@
 		797E96381DE0F78600077C6C /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		797E963A1DE0F78600077C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797E963C1DE0F78600077C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797E964B1DE229D100077C6C /* TableRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRowController.h; sourceTree = "<group>"; };
+		797E964C1DE229D100077C6C /* TableRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRowController.m; sourceTree = "<group>"; };
 		7980E25F1DD8C80B005A8F31 /* FontAwesome_BBExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_BBExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980E2621DD8C80B005A8F31 /* FontAwesome_BBExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesome_BBExtensions.h; sourceTree = "<group>"; };
 		7980E26A1DD8C8EE005A8F31 /* BBFontAwesomeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFontAwesomeConstants.h; sourceTree = "<group>"; };
@@ -182,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E96481DE2298800077C6C /* FontAwesome_BBExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +247,8 @@
 			children = (
 				797E96341DE0F78600077C6C /* InterfaceController.h */,
 				797E96351DE0F78600077C6C /* InterfaceController.m */,
+				797E964B1DE229D100077C6C /* TableRowController.h */,
+				797E964C1DE229D100077C6C /* TableRowController.m */,
 				797E96371DE0F78600077C6C /* ExtensionDelegate.h */,
 				797E96381DE0F78600077C6C /* ExtensionDelegate.m */,
 				797E963A1DE0F78600077C6C /* Assets.xcassets */,
@@ -444,6 +460,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				797E964A1DE2299000077C6C /* PBXTargetDependency */,
 			);
 			name = "watchOS-Demo Extension";
 			productName = "watchOS-Demo Extension";
@@ -609,6 +626,7 @@
 			files = (
 				797E96291DE0F78600077C6C /* Assets.xcassets in Resources */,
 				797E96271DE0F78600077C6C /* Interface.storyboard in Resources */,
+				797E964E1DE2304400077C6C /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797E963B1DE0F78600077C6C /* Assets.xcassets in Resources */,
+				797E964F1DE2307600077C6C /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +695,7 @@
 			files = (
 				797E96391DE0F78600077C6C /* ExtensionDelegate.m in Sources */,
 				797E96361DE0F78600077C6C /* InterfaceController.m in Sources */,
+				797E964D1DE229D100077C6C /* TableRowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +753,11 @@
 			isa = PBXTargetDependency;
 			target = 797E96221DE0F78600077C6C /* watchOS-Demo */;
 			targetProxy = 797E963D1DE0F78600077C6C /* PBXContainerItemProxy */;
+		};
+		797E964A1DE2299000077C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797E960C1DE0F5A400077C6C /* watchOS-FontAwesome-BBExtensions */;
+			targetProxy = 797E96491DE2299000077C6C /* PBXContainerItemProxy */;
 		};
 		7980E28C1DD8CB79005A8F31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -837,7 +862,7 @@
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
 				INFOPLIST_FILE = "watchOS-Demo Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -853,7 +878,7 @@
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
 				INFOPLIST_FILE = "watchOS-Demo Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -869,7 +894,7 @@
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
 				IBSC_MODULE = watchOS_Demo_Extension;
 				INFOPLIST_FILE = "watchOS-Demo/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -885,7 +910,7 @@
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
 				IBSC_MODULE = watchOS_Demo_Extension;
 				INFOPLIST_FILE = "watchOS-Demo/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1033,7 +1058,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1045,7 +1070,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C6AZ27TEW2;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bionbilateral.fontawesome.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,10 +7,12 @@
 //
 
 #import "InterfaceController.h"
+#import "TableRowController.h"
 
+#import <FontAwesome_BBExtensions/FontAwesome_BBExtensions.h>
 
 @interface InterfaceController()
-
+@property (weak,nonatomic) IBOutlet WKInterfaceTable *interfaceTable;
 @end
 
 
@@ -19,17 +21,13 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    // Configure interface objects here.
-}
-
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
-}
-
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
+    [self.interfaceTable setNumberOfRows:BB_FONT_AWESOME_ICON_TOTAL_ICONS withRowType:NSStringFromClass([TableRowController class])];
+    
+    for (NSInteger i=0; i<self.interfaceTable.numberOfRows; i++) {
+        TableRowController *rowController = [self.interfaceTable rowControllerAtIndex:i];
+        
+        [rowController setIcon:i];
+    }
 }
 
 @end
