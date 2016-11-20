@@ -23,7 +23,7 @@ FOUNDATION_EXPORT const unsigned char FontAwesome_BBExtensionsVersionString[];
 #if (TARGET_OS_IPHONE || TARGET_OS_TV)
 #import <FontAwesome_BBExtensions/UIFont+BBFontAwesomeExtensions.h>
 #import <FontAwesome_BBExtensions/UIImage+BBFontAwesomeExtensions.h>
-#if (!TARGET_OS_WATCH && !TARGET_OS_TV)
+#if (!TARGET_OS_WATCH)
 #import <FontAwesome_BBExtensions/UIButton+BBFontAwesomeExtensions.h>
 #endif
 #else

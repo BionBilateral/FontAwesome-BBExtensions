@@ -10,15 +10,18 @@ Pod::Spec.new do |s|
   s.author             = { "William Towe" => "willbur1984@gmail.com" }
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.12"
+  s.tvos.deployment_target = "10.0"
   s.watchos.deployment_target = "3.0"
   s.source       = {:git => "https://github.com/BionBilateral/FontAwesome-BBExtensions.git", :tag => s.version.to_s}
   s.source_files  = "FontAwesome-BBExtensions/**/*.{h,m}"
   s.exclude_files = "FontAwesome-BBExtensions/FontAwesome-BBExtensions/FontAwesome-BBExtensions-Info.h"
   s.ios.exclude_files = "FontAwesome-BBExtensions/macOS"
   s.osx.exclude_files = "FontAwesome-BBExtensions/iOS"
+  s.tvos.exclude_files = "FontAwesome-BBExtensions/macOS"
   s.watchos.exclude_files = "FontAwesome-BBExtensions/iOS/UIButton*.{h,m}", "FontAwesome-BBExtensions/macOS"
   s.frameworks = "Foundation"
   s.ios.frameworks = "UIKit"
+  s.tvos.frameworks = "UIKit"
   s.watchos.frameworks = "UIKit"
   s.osx.frameworks = "AppKit"
   s.requires_arc = true
