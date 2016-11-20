@@ -22,6 +22,9 @@
 #import <AppKit/NSColor.h>
 #endif
 
+/**
+ Macro returning the default tint color. The UIImage and NSImage categories default to this if nil is passed for their foregroundColor argument.
+ */
 #if (TARGET_OS_IPHONE || TARGET_OS_TV)
 #define BBFontAwesomeDefaultForegroundColor() [UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0]
 #else

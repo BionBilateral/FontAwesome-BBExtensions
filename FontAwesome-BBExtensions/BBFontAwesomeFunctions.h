@@ -22,6 +22,16 @@
 #endif
 #import "BBFontAwesomeConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ Returns the appropriate font point size and centered rect by reference that should be used to draw the provided text within the provided size.
+ 
+ @param text The text to draw
+ @param size The size that should constrain the text
+ @param outRect A pointer to a rect that will contain a centered rect that should be used to draw the text
+ @return The font point size
+ */
 #if (TARGET_OS_IPHONE || TARGET_OS_TV)
 extern CGFloat BBFontAwesomePointSizeAndRectForIconAndSize(NSString *text, CGSize size, CGRect *outRect);
 #else
@@ -29,3 +39,5 @@ extern CGFloat BBFontAwesomePointSizeAndRectForIconAndSize(NSString *text, NSSiz
 #endif
 
 #endif /* BBFontAwesomeFunctions_h */
+
+NS_ASSUME_NONNULL_END
