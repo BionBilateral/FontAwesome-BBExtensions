@@ -112,9 +112,9 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconBuySellAds = @"fa-buysellads",
     .iconCalculator = @"fa-calculator",
     .iconCalendar = @"fa-calendar",
+    .iconCalendarO = @"fa-calendar-o",
     .iconCalendarCheckO = @"fa-calendar-check-o",
     .iconCalendarMinusO = @"fa-calendar-minus-o",
-    .iconCalendarO = @"fa-calendar-o",
     .iconCalendarPlusO = @"fa-calendar-plus-o",
     .iconCalendarTimesO = @"fa-calendar-times-o",
     
@@ -221,9 +221,9 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconBuySellAds = @"\uf20d",
     .iconCalculator = @"\uf1ec",
     .iconCalendar = @"\uf073",
+    .iconCalendarO = @"\uf133",
     .iconCalendarCheckO = @"\uf274",
     .iconCalendarMinusO = @"\uf272",
-    .iconCalendarO = @"\uf133",
     .iconCalendarPlusO = @"\uf271",
     .iconCalendarTimesO = @"\uf273",
     

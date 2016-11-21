@@ -232,9 +232,9 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconBuySellAds;
     __unsafe_unretained NSString *iconCalculator;
     __unsafe_unretained NSString *iconCalendar;
+    __unsafe_unretained NSString *iconCalendarO;
     __unsafe_unretained NSString *iconCalendarCheckO;
     __unsafe_unretained NSString *iconCalendarMinusO;
-    __unsafe_unretained NSString *iconCalendarO;
     __unsafe_unretained NSString *iconCalendarPlusO;
     __unsafe_unretained NSString *iconCalendarTimesO;
     
@@ -344,9 +344,9 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconBuySellAds;
     __unsafe_unretained NSString *iconCalculator;
     __unsafe_unretained NSString *iconCalendar;
+    __unsafe_unretained NSString *iconCalendarO;
     __unsafe_unretained NSString *iconCalendarCheckO;
     __unsafe_unretained NSString *iconCalendarMinusO;
-    __unsafe_unretained NSString *iconCalendarO;
     __unsafe_unretained NSString *iconCalendarPlusO;
     __unsafe_unretained NSString *iconCalendarTimesO;
     
