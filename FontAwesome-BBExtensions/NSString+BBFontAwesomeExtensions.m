@@ -266,6 +266,14 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeIdentifier.iconCalendar;
         case BBFontAwesomeIconCalendarCheckO:
             return BBFontAwesomeIdentifier.iconCalendarCheckO;
+        case BBFontAwesomeIconCalendarO:
+            return BBFontAwesomeIdentifier.iconCalendarO;
+        case BBFontAwesomeIconCalendarPlusO:
+            return BBFontAwesomeIdentifier.iconCalendarPlusO;
+        case BBFontAwesomeIconCalendarMinusO:
+            return BBFontAwesomeIdentifier.iconCalendarMinusO;
+        case BBFontAwesomeIconCalendarTimesO:
+            return BBFontAwesomeIdentifier.iconCalendarTimesO;
             
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeIdentifier.iconPlus;
@@ -475,6 +483,14 @@ static NSDictionary *kFontAwesomeIdentifiersToStrings;
             return BBFontAwesomeString.iconCalendar;
         case BBFontAwesomeIconCalendarCheckO:
             return BBFontAwesomeString.iconCalendarCheckO;
+        case BBFontAwesomeIconCalendarO:
+            return BBFontAwesomeString.iconCalendarO;
+        case BBFontAwesomeIconCalendarPlusO:
+            return BBFontAwesomeString.iconCalendarPlusO;
+        case BBFontAwesomeIconCalendarMinusO:
+            return BBFontAwesomeString.iconCalendarMinusO;
+        case BBFontAwesomeIconCalendarTimesO:
+            return BBFontAwesomeString.iconCalendarTimesO;
             
         case BBFontAwesomeIconPlus:
             return BBFontAwesomeString.iconPlus;

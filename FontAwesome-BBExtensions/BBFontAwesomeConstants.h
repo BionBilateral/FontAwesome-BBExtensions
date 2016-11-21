@@ -118,7 +118,11 @@ typedef NS_ENUM(NSInteger, BBFontAwesomeIcon) {
     BBFontAwesomeIconBuySellAds,
     BBFontAwesomeIconCalculator,
     BBFontAwesomeIconCalendar,
+    BBFontAwesomeIconCalendarO,
     BBFontAwesomeIconCalendarCheckO,
+    BBFontAwesomeIconCalendarMinusO,
+    BBFontAwesomeIconCalendarPlusO,
+    BBFontAwesomeIconCalendarTimesO,
     
     BBFontAwesomeIconPlus,
     BBFontAwesomeIconQuestionCircleO,
@@ -229,6 +233,10 @@ extern const struct BBFontAwesomeIdentifier {
     __unsafe_unretained NSString *iconCalculator;
     __unsafe_unretained NSString *iconCalendar;
     __unsafe_unretained NSString *iconCalendarCheckO;
+    __unsafe_unretained NSString *iconCalendarMinusO;
+    __unsafe_unretained NSString *iconCalendarO;
+    __unsafe_unretained NSString *iconCalendarPlusO;
+    __unsafe_unretained NSString *iconCalendarTimesO;
     
     __unsafe_unretained NSString *iconPlus;
     __unsafe_unretained NSString *iconQuestionCircleO;
@@ -337,6 +345,10 @@ extern const struct BBFontAwesomeString {
     __unsafe_unretained NSString *iconCalculator;
     __unsafe_unretained NSString *iconCalendar;
     __unsafe_unretained NSString *iconCalendarCheckO;
+    __unsafe_unretained NSString *iconCalendarMinusO;
+    __unsafe_unretained NSString *iconCalendarO;
+    __unsafe_unretained NSString *iconCalendarPlusO;
+    __unsafe_unretained NSString *iconCalendarTimesO;
     
     __unsafe_unretained NSString *iconPlus;
     __unsafe_unretained NSString *iconQuestionCircleO;

@@ -113,6 +113,10 @@ const struct BBFontAwesomeIdentifier BBFontAwesomeIdentifier = {
     .iconCalculator = @"fa-calculator",
     .iconCalendar = @"fa-calendar",
     .iconCalendarCheckO = @"fa-calendar-check-o",
+    .iconCalendarMinusO = @"fa-calendar-minus-o",
+    .iconCalendarO = @"fa-calendar-o",
+    .iconCalendarPlusO = @"fa-calendar-plus-o",
+    .iconCalendarTimesO = @"fa-calendar-times-o",
     
     .iconPlus = @"fa-plus",
     .iconQuestionCircleO = @"fa-question-circle-o",
@@ -218,6 +222,10 @@ const struct BBFontAwesomeString BBFontAwesomeString = {
     .iconCalculator = @"\uf1ec",
     .iconCalendar = @"\uf073",
     .iconCalendarCheckO = @"\uf274",
+    .iconCalendarMinusO = @"\uf272",
+    .iconCalendarO = @"\uf133",
+    .iconCalendarPlusO = @"\uf271",
+    .iconCalendarTimesO = @"\uf273",
     
     .iconPlus = @"\uf067",
     .iconQuestionCircleO = @"\uf29c",
